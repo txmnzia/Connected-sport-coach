@@ -213,10 +213,51 @@ def compute_speed_potential(activities, acwr, hrv_status, body_battery):
             "comfortable_pace": "N/A", "max_pace": "N/A",
             "comfortable_pace_s": 0, "max_pace_s": 0,
             "best_pace": "N/A", "readiness_pct": 100,
+            "hr_zones": None,
         }
 
     best_pace_s = min(a["avg_pace_s"] for a in eligible)
 
+    # Estimate max HR from recorded per-activity max_hr values (ignore zeros/unrealistic)
+    max_hrs = sorted(a["max_hr"] for a in activities if a.get("max_hr", 0) > 150)
+    if max_hrs:
+        # 95th-percentile to avoid one-off outliers
+        estimated_max_hr = max_hrs[max(0, int(len(max_hrs) * 0.95) - 1)]
+    else:
+        # Fallback: avg during a hard run ≈ 87% of true max
+        avg_hrs = [a["avg_hr"] for a in eligible if a.get("avg_hr", 0) > 0]
+        estimated_max_hr = round(max(avg_hrs) / 0.87) if avg_hrs else None
+
+    hr_zones = None
+    comfortable_s = round(best_pace_s + 75)   # fallback if no zone data
+    threshold_pace_s = best_pace_s             # fallback
+
+    if estimated_max_hr:
+        z3_lo = round(estimated_max_hr * 0.70)
+        z3_hi = round(estimated_max_hr * 0.80)
+        z4_lo = round(estimated_max_hr * 0.80)
+        z4_hi = round(estimated_max_hr * 0.90)
+        z2_lo = round(estimated_max_hr * 0.60)
+        z2_hi = round(estimated_max_hr * 0.70)
+
+        hr_zones = {
+            "max_hr": estimated_max_hr,
+            "z2": [z2_lo, z2_hi],
+            "z3": [z3_lo, z3_hi],
+            "z4": [z4_lo, z4_hi],
+        }
+
+        # Comfortable = median pace of Zone 3 runs (aerobic tempo, 70-80% max HR)
+        z3_runs = [a for a in eligible if a.get("avg_hr", 0) and z3_lo <= a["avg_hr"] < z3_hi]
+        if z3_runs:
+            comfortable_s = round(statistics.median(a["avg_pace_s"] for a in z3_runs))
+
+        # Threshold = best pace from Zone 4 runs (80-90% max HR)
+        z4_runs = [a for a in eligible if a.get("avg_hr", 0) and a["avg_hr"] >= z4_lo]
+        if z4_runs:
+            threshold_pace_s = min(a["avg_pace_s"] for a in z4_runs)
+
+    # Readiness modifiers applied to the threshold ceiling
     readiness = 1.0
     if acwr > 1.3:
         readiness -= 0.03
@@ -228,8 +269,7 @@ def compute_speed_potential(activities, acwr, hrv_status, body_battery):
         readiness -= 0.02
     readiness = max(readiness, 0.80)
 
-    comfortable_s = round(best_pace_s + 75)
-    max_s = round(best_pace_s * (1 + (1 - readiness) * 2))
+    max_s = round(threshold_pace_s * (1 + (1 - readiness) * 2))
 
     return {
         "comfortable_pace": pace_str(comfortable_s),
@@ -238,6 +278,7 @@ def compute_speed_potential(activities, acwr, hrv_status, body_battery):
         "max_pace_s": max_s,
         "best_pace": pace_str(best_pace_s),
         "readiness_pct": round(readiness * 100),
+        "hr_zones": hr_zones,
     }
 
 

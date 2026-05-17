@@ -23,10 +23,6 @@ export default function RecoveryCard({ data }) {
   if (!data) return null
   const hrv = HRV_STATUS[data.hrv_status] ?? HRV_STATUS.unknown
 
-  const sleepLabel = data.sleep_score != null
-    ? `${data.sleep_score}/100${data.sleep_hours ? ` · ${data.sleep_hours}h` : ''}`
-    : '—'
-
   const batteryLabel = data.body_battery != null ? `${data.body_battery}%` : '—'
   const batteryColor = data.body_battery >= 70 ? 'text-emerald-600' : data.body_battery >= 40 ? 'text-amber-600' : 'text-red-600'
 
@@ -40,7 +36,6 @@ export default function RecoveryCard({ data }) {
       <p className="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">Recovery</p>
       <div className="divide-y divide-slate-100">
         <Row icon="💓" label="HRV (7-day avg)" value={hrvLabel} sub={hrvSub} valueColor={hrv.color} />
-        <Row icon="😴" label="Last night's sleep" value={sleepLabel} valueColor={data.sleep_score >= 75 ? 'text-emerald-600' : data.sleep_score >= 60 ? 'text-amber-600' : 'text-slate-800'} />
         <Row icon="⚡" label="Body battery" value={batteryLabel} valueColor={batteryColor} />
         {data.resting_hr && (
           <Row icon="🫀" label="Resting HR" value={`${data.resting_hr} bpm`} sub={data.resting_hr_baseline ? `Baseline: ${data.resting_hr_baseline} bpm` : undefined} />

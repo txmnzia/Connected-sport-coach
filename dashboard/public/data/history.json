@@ -205,18 +205,6 @@
     },
     {
       "date": "2026-04-25",
-      "activity_id": 1010,
-      "distance_km": 7.5,
-      "duration_min": 40.8,
-      "avg_pace_s": 326,
-      "avg_hr": 151,
-      "max_hr": 170,
-      "cadence": 174,
-      "elevation_gain_m": 25,
-      "training_load": 66
-    },
-    {
-      "date": "2026-04-25",
       "activity_id": 22651467290,
       "distance_km": 6.41,
       "duration_min": 37.4,
@@ -244,18 +232,6 @@
       "ground_contact_balance": 50.0
     },
     {
-      "date": "2026-04-27",
-      "activity_id": 1009,
-      "distance_km": 19.5,
-      "duration_min": 112.1,
-      "avg_pace_s": 345,
-      "avg_hr": 142,
-      "max_hr": 159,
-      "cadence": 169,
-      "elevation_gain_m": 82,
-      "training_load": 138
-    },
-    {
       "date": "2026-04-29",
       "activity_id": 22699729919,
       "distance_km": 8.7,
@@ -268,18 +244,6 @@
       "training_load": 0,
       "aerobic_effect": 3.0999999046325684,
       "ground_contact_balance": 50.0
-    },
-    {
-      "date": "2026-04-30",
-      "activity_id": 1008,
-      "distance_km": 11.2,
-      "duration_min": 62.0,
-      "avg_pace_s": 332,
-      "avg_hr": 147,
-      "max_hr": 165,
-      "cadence": 171,
-      "elevation_gain_m": 48,
-      "training_load": 88
     },
     {
       "date": "2026-05-02",
@@ -296,18 +260,6 @@
       "ground_contact_balance": 50.0
     },
     {
-      "date": "2026-05-03",
-      "activity_id": 1007,
-      "distance_km": 8.0,
-      "duration_min": 44.0,
-      "avg_pace_s": 330,
-      "avg_hr": 149,
-      "max_hr": 167,
-      "cadence": 173,
-      "elevation_gain_m": 28,
-      "training_load": 70
-    },
-    {
       "date": "2026-05-04",
       "activity_id": 22762222599,
       "distance_km": 9.78,
@@ -320,18 +272,6 @@
       "training_load": 0,
       "aerobic_effect": 2.5999999046325684,
       "ground_contact_balance": 50.0
-    },
-    {
-      "date": "2026-05-05",
-      "activity_id": 1006,
-      "distance_km": 14.8,
-      "duration_min": 84.1,
-      "avg_pace_s": 341,
-      "avg_hr": 144,
-      "max_hr": 162,
-      "cadence": 169,
-      "elevation_gain_m": 72,
-      "training_load": 112
     },
     {
       "date": "2026-05-06",
@@ -348,30 +288,6 @@
       "ground_contact_balance": 50.0
     },
     {
-      "date": "2026-05-07",
-      "activity_id": 1005,
-      "distance_km": 10.4,
-      "duration_min": 58.2,
-      "avg_pace_s": 336,
-      "avg_hr": 146,
-      "max_hr": 163,
-      "cadence": 171,
-      "elevation_gain_m": 41,
-      "training_load": 82
-    },
-    {
-      "date": "2026-05-09",
-      "activity_id": 1004,
-      "distance_km": 6.2,
-      "duration_min": 31.9,
-      "avg_pace_s": 309,
-      "avg_hr": 159,
-      "max_hr": 178,
-      "cadence": 178,
-      "elevation_gain_m": 18,
-      "training_load": 65
-    },
-    {
       "date": "2026-05-09",
       "activity_id": 22820331918,
       "distance_km": 16.53,
@@ -386,30 +302,6 @@
       "ground_contact_balance": 50.0
     },
     {
-      "date": "2026-05-11",
-      "activity_id": 1003,
-      "distance_km": 20.1,
-      "duration_min": 115.4,
-      "avg_pace_s": 345,
-      "avg_hr": 143,
-      "max_hr": 161,
-      "cadence": 170,
-      "elevation_gain_m": 88,
-      "training_load": 145
-    },
-    {
-      "date": "2026-05-12",
-      "activity_id": 1002,
-      "distance_km": 8.5,
-      "duration_min": 45.8,
-      "avg_pace_s": 323,
-      "avg_hr": 152,
-      "max_hr": 172,
-      "cadence": 174,
-      "elevation_gain_m": 32,
-      "training_load": 74
-    },
-    {
       "date": "2026-05-13",
       "activity_id": 22868603232,
       "distance_km": 5.56,
@@ -422,18 +314,6 @@
       "training_load": 0,
       "aerobic_effect": 3.0,
       "ground_contact_balance": 50.0
-    },
-    {
-      "date": "2026-05-14",
-      "activity_id": 1001,
-      "distance_km": 12.3,
-      "duration_min": 68.1,
-      "avg_pace_s": 332,
-      "avg_hr": 148,
-      "max_hr": 168,
-      "cadence": 172,
-      "elevation_gain_m": 55,
-      "training_load": 98
     },
     {
       "date": "2026-05-15",
@@ -470,7 +350,6 @@
       "hrv_7day_avg": 70,
       "hrv_last_night": 68,
       "resting_hr": 49,
-      "sleep_score": 81,
       "body_battery_high": 92
     },
     {
@@ -478,7 +357,6 @@
       "hrv_7day_avg": 71,
       "hrv_last_night": 72,
       "resting_hr": 49,
-      "sleep_score": 83,
       "body_battery_high": 94
     },
     {
@@ -486,7 +364,6 @@
       "hrv_7day_avg": 71,
       "hrv_last_night": 69,
       "resting_hr": 50,
-      "sleep_score": 78,
       "body_battery_high": 88
     },
     {
@@ -494,7 +371,6 @@
       "hrv_7day_avg": 70,
       "hrv_last_night": 65,
       "resting_hr": 51,
-      "sleep_score": 74,
       "body_battery_high": 84
     },
     {
@@ -502,7 +378,6 @@
       "hrv_7day_avg": 70,
       "hrv_last_night": 70,
       "resting_hr": 50,
-      "sleep_score": 80,
       "body_battery_high": 90
     },
     {
@@ -510,7 +385,6 @@
       "hrv_7day_avg": 71,
       "hrv_last_night": 73,
       "resting_hr": 49,
-      "sleep_score": 82,
       "body_battery_high": 91
     },
     {
@@ -518,7 +392,6 @@
       "hrv_7day_avg": 71,
       "hrv_last_night": 71,
       "resting_hr": 50,
-      "sleep_score": 79,
       "body_battery_high": 89
     },
     {
@@ -526,7 +399,6 @@
       "hrv_7day_avg": 70,
       "hrv_last_night": 67,
       "resting_hr": 51,
-      "sleep_score": 75,
       "body_battery_high": 85
     },
     {
@@ -534,7 +406,6 @@
       "hrv_7day_avg": 70,
       "hrv_last_night": 69,
       "resting_hr": 50,
-      "sleep_score": 77,
       "body_battery_high": 87
     },
     {
@@ -542,7 +413,6 @@
       "hrv_7day_avg": 69,
       "hrv_last_night": 66,
       "resting_hr": 51,
-      "sleep_score": 73,
       "body_battery_high": 82
     },
     {
@@ -550,7 +420,6 @@
       "hrv_7day_avg": 69,
       "hrv_last_night": 71,
       "resting_hr": 50,
-      "sleep_score": 80,
       "body_battery_high": 90
     },
     {
@@ -558,7 +427,6 @@
       "hrv_7day_avg": 68,
       "hrv_last_night": 62,
       "resting_hr": 52,
-      "sleep_score": 71,
       "body_battery_high": 79
     },
     {
@@ -566,7 +434,6 @@
       "hrv_7day_avg": 68,
       "hrv_last_night": 67,
       "resting_hr": 51,
-      "sleep_score": 76,
       "body_battery_high": 84
     },
     {
@@ -574,7 +441,6 @@
       "hrv_7day_avg": 68,
       "hrv_last_night": 68,
       "resting_hr": 51,
-      "sleep_score": 77,
       "body_battery_high": 86
     },
     {
@@ -582,7 +448,6 @@
       "hrv_7day_avg": 67,
       "hrv_last_night": 64,
       "resting_hr": 52,
-      "sleep_score": 72,
       "body_battery_high": 80
     },
     {
@@ -590,7 +455,6 @@
       "hrv_7day_avg": 67,
       "hrv_last_night": 69,
       "resting_hr": 51,
-      "sleep_score": 78,
       "body_battery_high": 87
     },
     {
@@ -598,7 +462,6 @@
       "hrv_7day_avg": 66,
       "hrv_last_night": 63,
       "resting_hr": 52,
-      "sleep_score": 73,
       "body_battery_high": 81
     },
     {
@@ -606,7 +469,6 @@
       "hrv_7day_avg": 66,
       "hrv_last_night": 66,
       "resting_hr": 52,
-      "sleep_score": 75,
       "body_battery_high": 84
     },
     {
@@ -614,7 +476,6 @@
       "hrv_7day_avg": 65,
       "hrv_last_night": 61,
       "resting_hr": 53,
-      "sleep_score": 70,
       "body_battery_high": 78
     },
     {
@@ -622,7 +483,6 @@
       "hrv_7day_avg": 65,
       "hrv_last_night": 64,
       "resting_hr": 52,
-      "sleep_score": 74,
       "body_battery_high": 82
     },
     {
@@ -630,7 +490,6 @@
       "hrv_7day_avg": 64,
       "hrv_last_night": 60,
       "resting_hr": 53,
-      "sleep_score": 71,
       "body_battery_high": 79
     },
     {
@@ -638,7 +497,6 @@
       "hrv_7day_avg": 64,
       "hrv_last_night": 65,
       "resting_hr": 52,
-      "sleep_score": 76,
       "body_battery_high": 85
     },
     {
@@ -646,7 +504,6 @@
       "hrv_7day_avg": 63,
       "hrv_last_night": 59,
       "resting_hr": 53,
-      "sleep_score": 70,
       "body_battery_high": 77
     },
     {
@@ -654,7 +511,6 @@
       "hrv_7day_avg": 63,
       "hrv_last_night": 62,
       "resting_hr": 52,
-      "sleep_score": 73,
       "body_battery_high": 81
     },
     {
@@ -662,7 +518,6 @@
       "hrv_7day_avg": 62,
       "hrv_last_night": 57,
       "resting_hr": 53,
-      "sleep_score": 69,
       "body_battery_high": 76
     },
     {
@@ -670,7 +525,6 @@
       "hrv_7day_avg": 62,
       "hrv_last_night": 60,
       "resting_hr": 52,
-      "sleep_score": 72,
       "body_battery_high": 80
     },
     {
@@ -678,7 +532,6 @@
       "hrv_7day_avg": 62,
       "hrv_last_night": 63,
       "resting_hr": 52,
-      "sleep_score": 74,
       "body_battery_high": 82
     },
     {
@@ -686,7 +539,6 @@
       "hrv_7day_avg": 62,
       "hrv_last_night": 59,
       "resting_hr": 53,
-      "sleep_score": 71,
       "body_battery_high": 78
     },
     {
@@ -694,7 +546,6 @@
       "hrv_7day_avg": 62,
       "hrv_last_night": 61,
       "resting_hr": 52,
-      "sleep_score": 73,
       "body_battery_high": 80
     },
     {
@@ -702,7 +553,6 @@
       "hrv_7day_avg": 62,
       "hrv_last_night": 58,
       "resting_hr": 52,
-      "sleep_score": 74,
       "body_battery_high": 78
     },
     {
@@ -710,7 +560,6 @@
       "hrv_7day_avg": 62,
       "hrv_last_night": 58,
       "resting_hr": 52,
-      "sleep_score": 74,
       "body_battery_high": 78
     }
   ]

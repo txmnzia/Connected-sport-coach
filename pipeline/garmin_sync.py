@@ -102,13 +102,6 @@ def fetch_daily_health(api, start_date, end_date, existing_dates=None):
                 pass
 
             try:
-                score, hours = _extract_sleep(api.get_sleep_data(date_str))
-                day["sleep_score"] = score
-                day["sleep_hours"] = hours
-            except Exception:
-                pass
-
-            try:
                 day.update(_extract_hrv(api.get_hrv_data(date_str)))
             except Exception:
                 pass

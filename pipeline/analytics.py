@@ -81,8 +81,8 @@ def compute_hrv_status(daily_health):
     return round(latest, 1), round(baseline, 1), status
 
 
-def compute_injury_risk(acwr, hrv_status, volume_spike_pct, sleep_score, resting_hr, rhr_baseline):
-    # ACWR sub-score (35%)
+def compute_injury_risk(acwr, hrv_status, volume_spike_pct, resting_hr, rhr_baseline):
+    # ACWR sub-score (40%)
     if acwr < 0.8:
         acwr_s = 15
     elif acwr <= 1.0:
@@ -94,7 +94,7 @@ def compute_injury_risk(acwr, hrv_status, volume_spike_pct, sleep_score, resting
     else:
         acwr_s = min(75 + int((acwr - 1.5) * 20), 95)
 
-    # HRV sub-score (25%)
+    # HRV sub-score (30%)
     hrv_s = {"elevated": 5, "normal": 15, "unknown": 20, "below_baseline": 45, "suppressed": 80}.get(hrv_status, 20)
 
     # Volume spike sub-score (20%)
@@ -107,10 +107,6 @@ def compute_injury_risk(acwr, hrv_status, volume_spike_pct, sleep_score, resting
     else:
         vol_s = 75
 
-    # Sleep sub-score (10%)
-    s = sleep_score or 70
-    sleep_s = 5 if s >= 80 else 20 if s >= 65 else 50 if s >= 50 else 75
-
     # Resting HR sub-score (10%)
     if resting_hr and rhr_baseline:
         ratio = resting_hr / rhr_baseline
@@ -118,7 +114,7 @@ def compute_injury_risk(acwr, hrv_status, volume_spike_pct, sleep_score, resting
     else:
         rhr_s = 15
 
-    score = int(acwr_s * 0.35 + hrv_s * 0.25 + vol_s * 0.20 + sleep_s * 0.10 + rhr_s * 0.10)
+    score = int(acwr_s * 0.40 + hrv_s * 0.30 + vol_s * 0.20 + rhr_s * 0.10)
     score = max(0, min(score, 100))
 
     if score < 25:
@@ -149,16 +145,17 @@ def compute_injury_risk(acwr, hrv_status, volume_spike_pct, sleep_score, resting
                 "status": "high" if volume_spike_pct > 20 else "moderate" if volume_spike_pct > 10 else "ok",
                 "spike_pct": volume_spike_pct,
             },
-            "sleep": {
-                "label": "Sleep quality",
-                "status": "poor" if (sleep_score or 70) < 65 else "ok",
-                "score": sleep_score,
+            "resting_hr": {
+                "label": "Resting heart rate",
+                "status": "elevated" if (resting_hr and rhr_baseline and resting_hr / rhr_baseline > 1.10)
+                          else "moderate" if (resting_hr and rhr_baseline and resting_hr / rhr_baseline > 1.05)
+                          else "ok",
             },
         },
     }
 
 
-def compute_max_safe_distance(activities, acwr, hrv_status, sleep_score, resting_hr, rhr_baseline):
+def compute_max_safe_distance(activities, acwr, hrv_status, resting_hr, rhr_baseline):
     today = date.today()
     cutoff = today - timedelta(days=28)
 
@@ -186,12 +183,6 @@ def compute_max_safe_distance(activities, acwr, hrv_status, sleep_score, resting
     elif hrv_status == "below_baseline":
         base_km *= 0.90
 
-    s = sleep_score or 70
-    if s < 50:
-        base_km *= 0.80
-    elif s < 65:
-        base_km *= 0.90
-
     if resting_hr and rhr_baseline and resting_hr / rhr_baseline > 1.10:
         base_km *= 0.85
 
@@ -206,7 +197,7 @@ def compute_max_safe_distance(activities, acwr, hrv_status, sleep_score, resting
     }
 
 
-def compute_speed_potential(activities, acwr, hrv_status, sleep_score, body_battery):
+def compute_speed_potential(activities, acwr, hrv_status, body_battery):
     today = date.today()
     cutoff = today - timedelta(days=90)
 
@@ -233,8 +224,6 @@ def compute_speed_potential(activities, acwr, hrv_status, sleep_score, body_batt
         readiness -= 0.05
     elif hrv_status == "below_baseline":
         readiness -= 0.03
-    if (sleep_score or 70) < 65:
-        readiness -= 0.02
     if body_battery and body_battery < 40:
         readiness -= 0.02
     readiness = max(readiness, 0.80)
@@ -328,7 +317,6 @@ def compute_all(activities, daily_health):
     sorted_health = sorted(daily_health, key=lambda d: d["date"])
     latest = sorted_health[-1] if sorted_health else {}
 
-    sleep_score = latest.get("sleep_score")
     body_battery = latest.get("body_battery_high")
     resting_hr = latest.get("resting_hr")
 
@@ -336,14 +324,13 @@ def compute_all(activities, daily_health):
     rhr_baseline = round(statistics.median(rhr_values)) if rhr_values else None
 
     injury_risk = compute_injury_risk(
-        load["acwr"], hrv_status, volume["volume_spike_pct"],
-        sleep_score, resting_hr, rhr_baseline,
+        load["acwr"], hrv_status, volume["volume_spike_pct"], resting_hr, rhr_baseline,
     )
     max_distance = compute_max_safe_distance(
-        activities, load["acwr"], hrv_status, sleep_score, resting_hr, rhr_baseline,
+        activities, load["acwr"], hrv_status, resting_hr, rhr_baseline,
     )
     speed = compute_speed_potential(
-        activities, load["acwr"], hrv_status, sleep_score, body_battery,
+        activities, load["acwr"], hrv_status, body_battery,
     )
     performance = compute_performance(activities)
 
@@ -367,8 +354,6 @@ def compute_all(activities, daily_health):
             "hrv_7day_avg": hrv_recent,
             "hrv_baseline": hrv_baseline,
             "hrv_status": hrv_status,
-            "sleep_score": sleep_score,
-            "sleep_hours": latest.get("sleep_hours"),
             "body_battery": body_battery,
             "resting_hr": resting_hr,
             "resting_hr_baseline": rhr_baseline,

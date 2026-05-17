@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: '0 6 * * *'   # 6 AM UTC daily
   workflow_dispatch:        # manual trigger from GitHub UI
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'dashboard/public/data/**'  # avoid loop from data commits
 
 permissions:
   contents: write
@@ -46,7 +50,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add dashboard/public/data/metrics.json dashboard/public/data/history.json
-          git diff --staged --quiet || git commit -m "chore: sync training data $(date -u +%Y-%m-%d)"
+          git diff --staged --quiet || git commit -m "chore: sync training data $(date -u +%Y-%m-%d) [skip ci]"
           git push
 
       - name: Set up Node.js

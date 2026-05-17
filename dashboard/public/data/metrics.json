@@ -2,57 +2,71 @@
   "generated_at": "2026-05-17T06:00:00Z",
   "data_through": "2026-05-17",
   "injury_risk": {
-    "score": 42,
+    "score": 37,
     "label": "moderate",
     "message": "Train, but ease off intensity",
     "factors": {
-      "training_load": { "label": "Training load", "status": "elevated", "acwr": 1.28 },
-      "recovery": { "label": "Recovery (HRV)", "status": "below_baseline" },
-      "volume": { "label": "Weekly volume", "status": "moderate", "spike_pct": 18.1 },
-      "sleep": { "label": "Sleep quality", "status": "ok", "score": 74 }
+      "training_load": {
+        "label": "Training load",
+        "status": "ok",
+        "acwr": 1.07
+      },
+      "recovery": {
+        "label": "Recovery (HRV)",
+        "status": "below_baseline"
+      },
+      "volume": {
+        "label": "Weekly volume",
+        "status": "high",
+        "spike_pct": 72.6
+      },
+      "sleep": {
+        "label": "Sleep quality",
+        "status": "ok",
+        "score": 74
+      }
     }
   },
   "max_safe_distance": {
-    "easy_km": 24.0,
-    "moderate_km": 19.2,
-    "hard_km": 14.4,
+    "easy_km": 21.7,
+    "moderate_km": 17.4,
+    "hard_km": 13.0,
     "basis_km": 20.1,
     "basis_date": "2026-05-11"
   },
   "speed_potential": {
-    "comfortable_pace": "5:20",
-    "max_pace": "4:52",
-    "comfortable_pace_s": 320,
-    "max_pace_s": 292,
-    "best_pace": "4:45",
-    "readiness_pct": 96
+    "comfortable_pace": "6:24",
+    "max_pace": "5:28",
+    "comfortable_pace_s": 384,
+    "max_pace_s": 328,
+    "best_pace": "5:09",
+    "readiness_pct": 97
   },
   "performance": {
-    "fitness_label": "improving",
-    "fitness_message": "Your training load is building — fitness is trending up.",
+    "fitness_label": "maintaining",
+    "fitness_message": "Consistent training \u2014 you're holding your current level.",
     "weak_spots": [
-      "Too many hard-effort runs — aim for 80% easy pace",
-      "Cadence averages 168 spm — target 170–180 spm"
+      "Cadence averages 165 spm \u2014 target 170\u2013180 spm"
     ],
-    "recent_runs": 8
+    "recent_runs": 20
   },
   "training_load": {
-    "acute": 342.0,
-    "chronic": 267.5,
-    "acwr": 1.28,
-    "weekly_km": 48.2,
-    "avg_4week_km": 40.8,
-    "volume_spike_pct": 18.1
+    "acute": 1161.0,
+    "chronic": 1080.5,
+    "acwr": 1.07,
+    "weekly_km": 63.4,
+    "avg_4week_km": 36.7,
+    "volume_spike_pct": 72.6
   },
   "recovery": {
     "hrv_last_night": 58,
-    "hrv_7day_avg": 62.0,
-    "hrv_baseline": 71.0,
+    "hrv_7day_avg": 62,
+    "hrv_baseline": 67,
     "hrv_status": "below_baseline",
     "sleep_score": 74,
-    "sleep_hours": 7.0,
+    "sleep_hours": null,
     "body_battery": 78,
     "resting_hr": 52,
-    "resting_hr_baseline": 50
+    "resting_hr_baseline": 52
   }
 }

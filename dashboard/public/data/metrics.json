@@ -34,12 +34,27 @@
     "basis_date": "2026-05-09"
   },
   "speed_potential": {
-    "comfortable_pace": "6:50",
+    "comfortable_pace": "6:14",
     "max_pace": "5:55",
-    "comfortable_pace_s": 410,
+    "comfortable_pace_s": 374,
     "max_pace_s": 355,
     "best_pace": "5:35",
-    "readiness_pct": 97
+    "readiness_pct": 97,
+    "hr_zones": {
+      "max_hr": 179.0,
+      "z2": [
+        107,
+        125
+      ],
+      "z3": [
+        125,
+        143
+      ],
+      "z4": [
+        143,
+        161
+      ]
+    }
   },
   "performance": {
     "fitness_label": "maintaining",

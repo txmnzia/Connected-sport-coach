@@ -43,23 +43,23 @@
     },
     {
       "week_start": "2026-04-20",
-      "total_km": 26.5,
-      "runs": 3
+      "total_km": 19.0,
+      "runs": 2
     },
     {
       "week_start": "2026-04-27",
-      "total_km": 51.7,
-      "runs": 5
+      "total_km": 13.0,
+      "runs": 2
     },
     {
       "week_start": "2026-05-04",
-      "total_km": 62.0,
-      "runs": 6
+      "total_km": 30.6,
+      "runs": 3
     },
     {
       "week_start": "2026-05-11",
-      "total_km": 63.4,
-      "runs": 6
+      "total_km": 22.5,
+      "runs": 3
     }
   ],
   "activities": [

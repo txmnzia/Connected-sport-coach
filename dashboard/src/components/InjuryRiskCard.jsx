@@ -24,7 +24,46 @@ const STATUS_LABEL = {
   suppressed: 'Significantly low', poor: 'Poor', unknown: 'No data',
 }
 
-function buildNarrative(injury_risk, training_load, recovery) {
+const LABEL_MAP = { low: 'Low', moderate: 'Medium', high: 'High', 'very high': 'Very High' }
+
+// Non-linear mapping from self-reported score (1–10) to injury risk (0–100).
+// Low scores barely move the needle; 7+ escalates sharply — consistent with
+// pain-scale research and the Hooper Index used in sports medicine.
+const WELLNESS_TO_RISK = [null, 0, 8, 20, 32, 45, 57, 68, 77, 87, 100]
+
+const WELLNESS_STATUS = [null, 'ok', 'ok', 'ok', 'moderate', 'moderate', 'elevated', 'high', 'high', 'high', 'high']
+const WELLNESS_LABEL  = [null,
+  'No pain — full training', 'Barely noticeable', 'Normal soreness',
+  'Mild fatigue', 'Noticeable discomfort', 'Affecting movement',
+  'Clear pain', 'Significant pain', 'Severe pain', 'Acute pain — do not run',
+]
+
+function applyWellness(objectiveScore, wellnessScore) {
+  if (!wellnessScore) return { score: objectiveScore, blended: false }
+  const subjective = WELLNESS_TO_RISK[wellnessScore]
+  const score = Math.min(100, Math.round(objectiveScore * 0.60 + subjective * 0.40))
+  return { score, blended: true }
+}
+
+function scoreToLabel(score) {
+  if (score < 25) return 'low'
+  if (score < 50) return 'moderate'
+  if (score < 70) return 'high'
+  return 'very high'
+}
+
+function scoreToMessage(score, wellnessScore) {
+  const base = score < 25 ? "You're good to train hard today"
+    : score < 50 ? "Train, but ease off intensity"
+    : score < 70 ? "Consider an easy or rest day"
+    : "Rest is the training today"
+
+  if (wellnessScore >= 9) return `${base}. You've reported acute pain (${wellnessScore}/10) — stop running and have this assessed by a physiotherapist.`
+  if (wellnessScore >= 7) return `${base}. You've reported significant pain (${wellnessScore}/10) — persistent pain at this level should be checked by a physiotherapist before your next run.`
+  return base
+}
+
+function buildNarrative(data, training_load, recovery) {
   const reasons = []
 
   if ((training_load?.volume_spike_pct ?? 0) > 20) {
@@ -38,15 +77,13 @@ function buildNarrative(injury_risk, training_load, recovery) {
     reasons.push('your heart rate variability is significantly below normal, a sign of accumulated fatigue')
   } else if (recovery?.hrv_status === 'below_baseline' && recovery?.hrv_7day_avg && recovery?.hrv_baseline) {
     const drop = Math.round((1 - recovery.hrv_7day_avg / recovery.hrv_baseline) * 100)
-    reasons.push(`your heart rate variability is ${drop}% below your personal norm, a sign your body is still recovering`)
+    reasons.push(`your HRV is ${drop}% below your personal norm, a sign your body is still recovering`)
   }
 
   if (reasons.length === 0) return null
-
   const joined = reasons.length === 1
     ? reasons[0]
     : reasons.slice(0, -1).join(', ') + ' and ' + reasons[reasons.length - 1]
-
   return `This is because ${joined}.`
 }
 
@@ -102,11 +139,14 @@ function buildFactorDetail(key, factor, training_load, recovery) {
   return null
 }
 
-export default function InjuryRiskCard({ data, training_load, recovery }) {
+export default function InjuryRiskCard({ data, training_load, recovery, wellnessScore }) {
   if (!data) return null
-  const style = RISK_STYLE[data.label] ?? RISK_STYLE.moderate
+
+  const { score, blended } = applyWellness(data.score, wellnessScore)
+  const label = blended ? scoreToLabel(score) : data.label
+  const message = blended ? scoreToMessage(score, wellnessScore) : data.message
+  const style = RISK_STYLE[label] ?? RISK_STYLE.moderate
   const narrative = buildNarrative(data, training_load, recovery)
-  const LABEL_MAP = { low: 'Low', moderate: 'Medium', high: 'High', 'very high': 'Very High' }
 
   const factors = Object.entries(data.factors ?? {}).filter(([k]) => k !== 'sleep')
 
@@ -118,20 +158,30 @@ export default function InjuryRiskCard({ data, training_load, recovery }) {
         <div className="flex items-center gap-3">
           <span className={`w-3 h-3 rounded-full shrink-0 mt-1 ${style.badge}`} />
           <span className={`text-3xl font-bold ${style.text}`}>
-            {LABEL_MAP[data.label] ?? data.label}
+            {LABEL_MAP[label] ?? label}
           </span>
         </div>
         <div className="text-right shrink-0">
-          <span className={`text-4xl font-bold ${style.text}`}>{data.score}</span>
+          <span className={`text-4xl font-bold ${style.text}`}>{score}</span>
           <span className="text-slate-400 text-sm"> / 100</span>
         </div>
       </div>
+
+      {blended && (
+        <div className="flex gap-3 text-xs text-slate-500 mb-2">
+          <span>Garmin data: <span className="font-semibold">{data.score}/100</span></span>
+          <span>·</span>
+          <span>How you feel: <span className="font-semibold">{wellnessScore}/10</span></span>
+          <span>·</span>
+          <span>Combined: <span className="font-semibold">{score}/100</span></span>
+        </div>
+      )}
 
       {narrative && (
         <p className="text-sm text-slate-700 leading-relaxed mb-1">{narrative}</p>
       )}
       <p className="text-sm font-medium text-slate-700 mb-2">
-        Today: <span className="font-normal text-slate-600">{data.message}.</span>
+        Today: <span className="font-normal text-slate-600">{message}.</span>
       </p>
 
       {factors.length > 0 && (
@@ -144,6 +194,14 @@ export default function InjuryRiskCard({ data, training_load, recovery }) {
               detail={buildFactorDetail(key, factor, training_load, recovery)}
             />
           ))}
+
+          {wellnessScore && (
+            <FactorRow
+              label="How you feel (self-reported)"
+              status={WELLNESS_STATUS[wellnessScore]}
+              detail={`${wellnessScore}/10 — ${WELLNESS_LABEL[wellnessScore]}. Contributes 40% of the combined score (60% Garmin data + 40% self-report), based on Hooper Index methodology used in sports medicine.`}
+            />
+          )}
         </div>
       )}
     </div>

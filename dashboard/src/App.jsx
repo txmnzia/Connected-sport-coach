@@ -6,6 +6,7 @@ import RecoveryCard from './components/RecoveryCard'
 import WeeklyVolumeChart from './components/WeeklyVolumeChart'
 import PerformanceCard from './components/PerformanceCard'
 import RecentActivities from './components/RecentActivities'
+import WellnessInput from './components/WellnessInput'
 
 function formatSyncDate(isoStr) {
   if (!isoStr) return 'Never'
@@ -17,6 +18,8 @@ export default function App() {
   const [metrics, setMetrics] = useState(null)
   const [history, setHistory] = useState(null)
   const [error, setError] = useState(null)
+  const [wellnessScore, setWellnessScore] = useState(null)
+  const [wellnessUpdatedAt, setWellnessUpdatedAt] = useState(null)
 
   useEffect(() => {
     fetch('./data/metrics.json')
@@ -28,7 +31,20 @@ export default function App() {
       .then(r => r.json())
       .then(setHistory)
       .catch(() => {})
+
+    const saved = localStorage.getItem('wellness_score')
+    const savedAt = localStorage.getItem('wellness_updated_at')
+    if (saved) setWellnessScore(parseInt(saved, 10))
+    if (savedAt) setWellnessUpdatedAt(savedAt)
   }, [])
+
+  function handleWellnessChange(score) {
+    const now = new Date().toISOString()
+    setWellnessScore(score)
+    setWellnessUpdatedAt(now)
+    localStorage.setItem('wellness_score', String(score))
+    localStorage.setItem('wellness_updated_at', now)
+  }
 
   if (error) {
     return (
@@ -67,10 +83,22 @@ export default function App() {
       </header>
 
       <main className="max-w-5xl mx-auto px-4 sm:px-6 py-6 space-y-4">
-        {/* Top row: injury risk + recovery */}
+        {/* Self-reported wellness — feeds into injury risk below */}
+        <WellnessInput
+          score={wellnessScore}
+          updatedAt={wellnessUpdatedAt}
+          onChange={handleWellnessChange}
+        />
+
+        {/* Injury risk (incorporates wellness score) + recovery */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="md:col-span-2">
-            <InjuryRiskCard data={metrics.injury_risk} load={metrics.training_load} />
+            <InjuryRiskCard
+              data={metrics.injury_risk}
+              training_load={metrics.training_load}
+              recovery={metrics.recovery}
+              wellnessScore={wellnessScore}
+            />
           </div>
           <RecoveryCard data={metrics.recovery} />
         </div>

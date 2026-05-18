@@ -2,14 +2,14 @@
   "generated_at": "2026-05-18T06:00:00Z",
   "data_through": "2026-05-18",
   "injury_risk": {
-    "score": 18,
-    "label": "low",
-    "message": "You're good to train hard today",
+    "score": 31,
+    "label": "moderate",
+    "message": "Train, but ease off intensity",
     "factors": {
       "training_load": {
         "label": "Training load",
         "status": "ok",
-        "acwr": 1.0
+        "acwr": 1.29
       },
       "recovery": {
         "label": "Recovery (HRV)",
@@ -18,7 +18,7 @@
       "volume": {
         "label": "Weekly volume",
         "status": "ok",
-        "spike_pct": -100.0
+        "spike_pct": -50.1
       },
       "resting_hr": {
         "label": "Resting heart rate",
@@ -34,9 +34,9 @@
     "basis_date": "2026-05-09"
   },
   "speed_potential": {
-    "comfortable_pace": "6:14",
+    "comfortable_pace": "6:09",
     "max_pace": "5:55",
-    "comfortable_pace_s": 374,
+    "comfortable_pace_s": 369,
     "max_pace_s": 355,
     "best_pace": "5:35",
     "readiness_pct": 97,
@@ -62,15 +62,15 @@
     "weak_spots": [
       "Cadence averages 158 spm \u2014 target 170\u2013180 spm"
     ],
-    "recent_runs": 10
+    "recent_runs": 11
   },
   "training_load": {
-    "acute": 844.0,
-    "chronic": 846.0,
-    "acwr": 1.0,
-    "weekly_km": 0,
+    "acute": 1211.3,
+    "chronic": 937.8,
+    "acwr": 1.29,
+    "weekly_km": 10.6,
     "avg_4week_km": 21.3,
-    "volume_spike_pct": -100.0
+    "volume_spike_pct": -50.1
   },
   "recovery": {
     "hrv_last_night": null,

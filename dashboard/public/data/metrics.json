@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-05-20T06:00:00Z",
-  "data_through": "2026-05-20",
+  "generated_at": "2026-05-21T06:00:00Z",
+  "data_through": "2026-05-21",
   "injury_risk": {
-    "score": 25,
+    "score": 34,
     "label": "moderate",
     "message": "Train, but ease off intensity",
     "factors": {
       "training_load": {
         "label": "Training load",
         "status": "ok",
-        "acwr": 1.06
+        "acwr": 1.21
       },
       "recovery": {
         "label": "Recovery (HRV)",
@@ -18,27 +18,27 @@
       "volume": {
         "label": "Weekly volume",
         "status": "ok",
-        "spike_pct": -50.1
+        "spike_pct": -26.6
       },
       "resting_hr": {
         "label": "Resting heart rate",
-        "status": "ok"
+        "status": "elevated"
       }
     }
   },
   "max_safe_distance": {
-    "easy_km": 17.9,
-    "moderate_km": 14.3,
-    "hard_km": 10.7,
+    "easy_km": 15.2,
+    "moderate_km": 12.1,
+    "hard_km": 9.1,
     "basis_km": 16.53,
     "basis_date": "2026-05-09"
   },
   "speed_potential": {
     "comfortable_pace": "6:09",
-    "max_pace": "5:55",
+    "max_pace": "4:29",
     "comfortable_pace_s": 369,
-    "max_pace_s": 355,
-    "best_pace": "5:35",
+    "max_pace_s": 269,
+    "best_pace": "4:13",
     "readiness_pct": 97,
     "hr_zones": {
       "max_hr": 179.0,
@@ -60,17 +60,17 @@
     "fitness_label": "maintaining",
     "fitness_message": "Consistent training \u2014 you're holding your current level.",
     "weak_spots": [
-      "Cadence averages 158 spm \u2014 target 170\u2013180 spm"
+      "Cadence averages 159 spm \u2014 target 170\u2013180 spm"
     ],
-    "recent_runs": 11
+    "recent_runs": 12
   },
   "training_load": {
-    "acute": 998.5,
-    "chronic": 937.8,
-    "acwr": 1.06,
-    "weekly_km": 10.6,
+    "acute": 1197.9,
+    "chronic": 987.7,
+    "acwr": 1.21,
+    "weekly_km": 15.6,
     "avg_4week_km": 21.3,
-    "volume_spike_pct": -50.1
+    "volume_spike_pct": -26.6
   },
   "recovery": {
     "hrv_last_night": null,
@@ -78,7 +78,7 @@
     "hrv_baseline": 67,
     "hrv_status": "below_baseline",
     "body_battery": null,
-    "resting_hr": null,
+    "resting_hr": 59.0,
     "resting_hr_baseline": 52
   }
 }

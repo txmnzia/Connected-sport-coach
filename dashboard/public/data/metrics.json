@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-05-22T06:00:00Z",
-  "data_through": "2026-05-22",
+  "generated_at": "2026-05-24T06:00:00Z",
+  "data_through": "2026-05-24",
   "injury_risk": {
-    "score": 18,
+    "score": 22,
     "label": "low",
     "message": "You're good to train hard today",
     "factors": {
       "training_load": {
         "label": "Training load",
-        "status": "ok",
-        "acwr": 0.83
+        "status": "low",
+        "acwr": 0.72
       },
       "recovery": {
         "label": "Recovery (HRV)",
@@ -62,12 +62,12 @@
     "weak_spots": [
       "Cadence averages 159 spm \u2014 target 170\u2013180 spm"
     ],
-    "recent_runs": 12
+    "recent_runs": 11
   },
   "training_load": {
-    "acute": 823.3,
-    "chronic": 987.7,
-    "acwr": 0.83,
+    "acute": 566.8,
+    "chronic": 791.3,
+    "acwr": 0.72,
     "weekly_km": 15.6,
     "avg_4week_km": 21.3,
     "volume_spike_pct": -26.6

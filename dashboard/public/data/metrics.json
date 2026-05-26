@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-25T06:00:00Z",
-  "data_through": "2026-05-25",
+  "generated_at": "2026-05-26T06:00:00Z",
+  "data_through": "2026-05-26",
   "injury_risk": {
-    "score": 32,
+    "score": 27,
     "label": "moderate",
     "message": "Train, but ease off intensity",
     "factors": {
@@ -22,14 +22,14 @@
       },
       "resting_hr": {
         "label": "Resting heart rate",
-        "status": "elevated"
+        "status": "ok"
       }
     }
   },
   "max_safe_distance": {
-    "easy_km": 20.2,
-    "moderate_km": 16.2,
-    "hard_km": 12.1,
+    "easy_km": 23.8,
+    "moderate_km": 19.0,
+    "hard_km": 14.3,
     "basis_km": 22.02,
     "basis_date": "2026-05-25"
   },
@@ -78,7 +78,7 @@
     "hrv_baseline": 67,
     "hrv_status": "below_baseline",
     "body_battery": null,
-    "resting_hr": 66.0,
+    "resting_hr": null,
     "resting_hr_baseline": 52
   }
 }

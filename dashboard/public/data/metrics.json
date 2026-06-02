@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-01T06:00:00Z",
-  "data_through": "2026-06-01",
+  "generated_at": "2026-06-02T06:00:00Z",
+  "data_through": "2026-06-02",
   "injury_risk": {
-    "score": 18,
+    "score": 23,
     "label": "low",
     "message": "You're good to train hard today",
     "factors": {
@@ -22,14 +22,14 @@
       },
       "resting_hr": {
         "label": "Resting heart rate",
-        "status": "ok"
+        "status": "elevated"
       }
     }
   },
   "max_safe_distance": {
-    "easy_km": 23.8,
-    "moderate_km": 19.0,
-    "hard_km": 14.3,
+    "easy_km": 20.2,
+    "moderate_km": 16.2,
+    "hard_km": 12.1,
     "basis_km": 22.02,
     "basis_date": "2026-05-25"
   },
@@ -62,7 +62,7 @@
     "weak_spots": [
       "Cadence averages 158 spm \u2014 target 170\u2013180 spm"
     ],
-    "recent_runs": 11
+    "recent_runs": 10
   },
   "training_load": {
     "acute": 895.3,
@@ -78,7 +78,7 @@
     "hrv_baseline": 67,
     "hrv_status": "below_baseline",
     "body_battery": null,
-    "resting_hr": null,
+    "resting_hr": 90.0,
     "resting_hr_baseline": 52
   }
 }

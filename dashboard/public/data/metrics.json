@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-02T06:00:00Z",
-  "data_through": "2026-06-02",
+  "generated_at": "2026-06-03T06:00:00Z",
+  "data_through": "2026-06-03",
   "injury_risk": {
-    "score": 23,
+    "score": 18,
     "label": "low",
     "message": "You're good to train hard today",
     "factors": {
       "training_load": {
         "label": "Training load",
         "status": "ok",
-        "acwr": 0.87
+        "acwr": 0.91
       },
       "recovery": {
         "label": "Recovery (HRV)",
@@ -22,14 +22,14 @@
       },
       "resting_hr": {
         "label": "Resting heart rate",
-        "status": "elevated"
+        "status": "ok"
       }
     }
   },
   "max_safe_distance": {
-    "easy_km": 20.2,
-    "moderate_km": 16.2,
-    "hard_km": 12.1,
+    "easy_km": 23.8,
+    "moderate_km": 19.0,
+    "hard_km": 14.3,
     "basis_km": 22.02,
     "basis_date": "2026-05-25"
   },
@@ -66,8 +66,8 @@
   },
   "training_load": {
     "acute": 895.3,
-    "chronic": 1026.7,
-    "acwr": 0.87,
+    "chronic": 984.5,
+    "acwr": 0.91,
     "weekly_km": 0,
     "avg_4week_km": 26.9,
     "volume_spike_pct": -100.0
@@ -78,7 +78,7 @@
     "hrv_baseline": 67,
     "hrv_status": "below_baseline",
     "body_battery": null,
-    "resting_hr": 90.0,
+    "resting_hr": null,
     "resting_hr_baseline": 52
   }
 }

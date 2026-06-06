@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-05T06:00:00Z",
-  "data_through": "2026-06-05",
+  "generated_at": "2026-06-06T06:00:00Z",
+  "data_through": "2026-06-06",
   "injury_risk": {
     "score": 22,
     "label": "low",
@@ -9,7 +9,7 @@
       "training_load": {
         "label": "Training load",
         "status": "low",
-        "acwr": 0.44
+        "acwr": 0.27
       },
       "recovery": {
         "label": "Recovery (HRV)",
@@ -18,7 +18,7 @@
       "volume": {
         "label": "Weekly volume",
         "status": "ok",
-        "spike_pct": -100.0
+        "spike_pct": -77.7
       },
       "resting_hr": {
         "label": "Resting heart rate",
@@ -34,25 +34,25 @@
     "basis_date": "2026-05-25"
   },
   "speed_potential": {
-    "comfortable_pace": "6:09",
+    "comfortable_pace": "5:52",
     "max_pace": "4:29",
-    "comfortable_pace_s": 369,
+    "comfortable_pace_s": 352,
     "max_pace_s": 269,
     "best_pace": "4:13",
     "readiness_pct": 97,
     "hr_zones": {
-      "max_hr": 179.0,
+      "max_hr": 178.0,
       "z2": [
         107,
         125
       ],
       "z3": [
         125,
-        143
+        142
       ],
       "z4": [
-        143,
-        161
+        142,
+        160
       ]
     }
   },
@@ -62,15 +62,15 @@
     "weak_spots": [
       "Cadence averages 158 spm \u2014 target 170\u2013180 spm"
     ],
-    "recent_runs": 9
+    "recent_runs": 10
   },
   "training_load": {
-    "acute": 433.6,
-    "chronic": 984.5,
-    "acwr": 0.44,
-    "weekly_km": 0,
+    "acute": 240.1,
+    "chronic": 878.4,
+    "acwr": 0.27,
+    "weekly_km": 6.0,
     "avg_4week_km": 26.9,
-    "volume_spike_pct": -100.0
+    "volume_spike_pct": -77.7
   },
   "recovery": {
     "hrv_last_night": null,

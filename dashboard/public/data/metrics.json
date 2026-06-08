@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-07T06:00:00Z",
-  "data_through": "2026-06-07",
+  "generated_at": "2026-06-08T06:00:00Z",
+  "data_through": "2026-06-08",
   "injury_risk": {
     "score": 22,
     "label": "low",
@@ -18,7 +18,7 @@
       "volume": {
         "label": "Weekly volume",
         "status": "ok",
-        "spike_pct": -77.7
+        "spike_pct": -100.0
       },
       "resting_hr": {
         "label": "Resting heart rate",
@@ -68,9 +68,9 @@
     "acute": 240.1,
     "chronic": 878.4,
     "acwr": 0.27,
-    "weekly_km": 6.0,
-    "avg_4week_km": 26.9,
-    "volume_spike_pct": -77.7
+    "weekly_km": 0,
+    "avg_4week_km": 20.8,
+    "volume_spike_pct": -100.0
   },
   "recovery": {
     "hrv_last_night": null,

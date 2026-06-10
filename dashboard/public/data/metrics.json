@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-09T06:00:00Z",
-  "data_through": "2026-06-09",
+  "generated_at": "2026-06-10T06:00:00Z",
+  "data_through": "2026-06-10",
   "injury_risk": {
     "score": 22,
     "label": "low",
@@ -9,7 +9,7 @@
       "training_load": {
         "label": "Training load",
         "status": "low",
-        "acwr": 0.27
+        "acwr": 0.29
       },
       "recovery": {
         "label": "Recovery (HRV)",
@@ -34,25 +34,25 @@
     "basis_date": "2026-05-25"
   },
   "speed_potential": {
-    "comfortable_pace": "5:52",
+    "comfortable_pace": "6:09",
     "max_pace": "4:29",
-    "comfortable_pace_s": 352,
+    "comfortable_pace_s": 369,
     "max_pace_s": 269,
     "best_pace": "4:13",
     "readiness_pct": 97,
     "hr_zones": {
-      "max_hr": 178.0,
+      "max_hr": 179.0,
       "z2": [
         107,
         125
       ],
       "z3": [
         125,
-        142
+        143
       ],
       "z4": [
-        142,
-        160
+        143,
+        161
       ]
     }
   },
@@ -66,8 +66,8 @@
   },
   "training_load": {
     "acute": 240.1,
-    "chronic": 878.4,
-    "acwr": 0.27,
+    "chronic": 825.2,
+    "acwr": 0.29,
     "weekly_km": 0,
     "avg_4week_km": 20.8,
     "volume_spike_pct": -100.0

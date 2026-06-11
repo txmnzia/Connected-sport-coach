@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-10T06:00:00Z",
-  "data_through": "2026-06-10",
+  "generated_at": "2026-06-11T06:00:00Z",
+  "data_through": "2026-06-11",
   "injury_risk": {
     "score": 22,
     "label": "low",
@@ -62,7 +62,7 @@
     "weak_spots": [
       "Cadence averages 159 spm \u2014 target 170\u2013180 spm"
     ],
-    "recent_runs": 9
+    "recent_runs": 8
   },
   "training_load": {
     "acute": 240.1,

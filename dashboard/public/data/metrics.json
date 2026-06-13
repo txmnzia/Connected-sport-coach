@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-12T06:00:00Z",
-  "data_through": "2026-06-12",
+  "generated_at": "2026-06-13T06:00:00Z",
+  "data_through": "2026-06-13",
   "injury_risk": {
     "score": 22,
     "label": "low",
@@ -34,25 +34,25 @@
     "basis_date": "2026-05-25"
   },
   "speed_potential": {
-    "comfortable_pace": "6:09",
+    "comfortable_pace": "6:10",
     "max_pace": "4:29",
-    "comfortable_pace_s": 369,
+    "comfortable_pace_s": 370,
     "max_pace_s": 269,
     "best_pace": "4:13",
     "readiness_pct": 97,
     "hr_zones": {
-      "max_hr": 179.0,
+      "max_hr": 182.0,
       "z2": [
-        107,
-        125
+        109,
+        127
       ],
       "z3": [
-        125,
-        143
+        127,
+        146
       ],
       "z4": [
-        143,
-        161
+        146,
+        164
       ]
     }
   },
@@ -63,7 +63,7 @@
       "Too many hard-effort runs \u2014 aim for 80% easy pace",
       "Cadence averages 161 spm \u2014 target 170\u2013180 spm"
     ],
-    "recent_runs": 9
+    "recent_runs": 8
   },
   "training_load": {
     "acute": 123.8,

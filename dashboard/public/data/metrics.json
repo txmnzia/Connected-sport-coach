@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-13T06:00:00Z",
-  "data_through": "2026-06-13",
+  "generated_at": "2026-06-14T06:00:00Z",
+  "data_through": "2026-06-14",
   "injury_risk": {
     "score": 22,
     "label": "low",
@@ -9,7 +9,7 @@
       "training_load": {
         "label": "Training load",
         "status": "low",
-        "acwr": 0.16
+        "acwr": 0.18
       },
       "recovery": {
         "label": "Recovery (HRV)",
@@ -67,8 +67,8 @@
   },
   "training_load": {
     "acute": 123.8,
-    "chronic": 762.5,
-    "acwr": 0.16,
+    "chronic": 698.4,
+    "acwr": 0.18,
     "weekly_km": 3.4,
     "avg_4week_km": 20.8,
     "volume_spike_pct": -83.6

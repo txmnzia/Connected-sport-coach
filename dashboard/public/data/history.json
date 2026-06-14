@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13",
+  "generated_at": "2026-06-14",
   "weekly_volumes": [
     {
       "week_start": "2026-03-23",
@@ -824,6 +824,16 @@
     },
     {
       "date": "2026-06-13",
+      "body_battery_high": null,
+      "body_battery_low": null,
+      "stress_avg": null,
+      "resting_hr": null,
+      "hrv_7day_avg": null,
+      "hrv_last_night": null,
+      "hrv_status": ""
+    },
+    {
+      "date": "2026-06-14",
       "body_battery_high": null,
       "body_battery_low": null,
       "stress_avg": null,

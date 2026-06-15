@@ -1,11 +1,6 @@
 {
-  "generated_at": "2026-06-14",
+  "generated_at": "2026-06-15",
   "weekly_volumes": [
-    {
-      "week_start": "2026-03-23",
-      "total_km": 8.2,
-      "runs": 1
-    },
     {
       "week_start": "2026-03-30",
       "total_km": 0,
@@ -60,6 +55,11 @@
       "week_start": "2026-06-08",
       "total_km": 3.4,
       "runs": 1
+    },
+    {
+      "week_start": "2026-06-15",
+      "total_km": 0,
+      "runs": 0
     }
   ],
   "activities": [
@@ -834,6 +834,16 @@
     },
     {
       "date": "2026-06-14",
+      "body_battery_high": null,
+      "body_battery_low": null,
+      "stress_avg": null,
+      "resting_hr": null,
+      "hrv_7day_avg": null,
+      "hrv_last_night": null,
+      "hrv_status": ""
+    },
+    {
+      "date": "2026-06-15",
       "body_battery_high": null,
       "body_battery_low": null,
       "stress_avg": null,

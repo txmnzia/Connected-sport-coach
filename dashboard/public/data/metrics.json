@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-15T06:00:00Z",
-  "data_through": "2026-06-15",
+  "generated_at": "2026-06-16T06:00:00Z",
+  "data_through": "2026-06-16",
   "injury_risk": {
     "score": 22,
     "label": "low",
@@ -63,7 +63,7 @@
       "Too many hard-effort runs \u2014 aim for 80% easy pace",
       "Cadence averages 162 spm \u2014 target 170\u2013180 spm"
     ],
-    "recent_runs": 7
+    "recent_runs": 6
   },
   "training_load": {
     "acute": 123.8,

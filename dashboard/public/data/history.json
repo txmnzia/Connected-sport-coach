@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16",
+  "generated_at": "2026-06-17",
   "weekly_volumes": [
     {
       "week_start": "2026-03-30",
@@ -345,13 +345,6 @@
     }
   ],
   "daily_health": [
-    {
-      "date": "2026-04-17",
-      "hrv_7day_avg": 70,
-      "hrv_last_night": 68,
-      "resting_hr": 49,
-      "body_battery_high": 92
-    },
     {
       "date": "2026-04-18",
       "hrv_7day_avg": 71,
@@ -854,6 +847,16 @@
     },
     {
       "date": "2026-06-16",
+      "body_battery_high": null,
+      "body_battery_low": null,
+      "stress_avg": null,
+      "resting_hr": null,
+      "hrv_7day_avg": null,
+      "hrv_last_night": null,
+      "hrv_status": ""
+    },
+    {
+      "date": "2026-06-17",
       "body_battery_high": null,
       "body_battery_low": null,
       "stress_avg": null,

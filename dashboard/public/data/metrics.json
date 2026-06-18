@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-17T06:00:00Z",
-  "data_through": "2026-06-17",
+  "generated_at": "2026-06-18T06:00:00Z",
+  "data_through": "2026-06-18",
   "injury_risk": {
     "score": 22,
     "label": "low",
@@ -9,7 +9,7 @@
       "training_load": {
         "label": "Training load",
         "status": "low",
-        "acwr": 0.22
+        "acwr": 0.0
       },
       "recovery": {
         "label": "Recovery (HRV)",
@@ -61,14 +61,14 @@
     "fitness_message": "Consistent training \u2014 you're holding your current level.",
     "weak_spots": [
       "Too many hard-effort runs \u2014 aim for 80% easy pace",
-      "Cadence averages 162 spm \u2014 target 170\u2013180 spm"
+      "Cadence averages 159 spm \u2014 target 170\u2013180 spm"
     ],
-    "recent_runs": 6
+    "recent_runs": 5
   },
   "training_load": {
-    "acute": 123.8,
+    "acute": 0,
     "chronic": 556.7,
-    "acwr": 0.22,
+    "acwr": 0.0,
     "weekly_km": 0,
     "avg_4week_km": 16.0,
     "volume_spike_pct": -100.0
@@ -76,7 +76,7 @@
   "recovery": {
     "hrv_last_night": null,
     "hrv_7day_avg": 62,
-    "hrv_baseline": 66.5,
+    "hrv_baseline": 66,
     "hrv_status": "below_baseline",
     "body_battery": null,
     "resting_hr": null,

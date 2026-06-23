@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-22T06:00:00Z",
-  "data_through": "2026-06-22",
+  "generated_at": "2026-06-23T06:00:00Z",
+  "data_through": "2026-06-23",
   "injury_risk": {
     "score": 13,
     "label": "low",
@@ -27,11 +27,11 @@
     }
   },
   "max_safe_distance": {
-    "easy_km": 26.4,
-    "moderate_km": 21.1,
-    "hard_km": 15.9,
-    "basis_km": 22.02,
-    "basis_date": "2026-05-25"
+    "easy_km": 10.6,
+    "moderate_km": 8.5,
+    "hard_km": 6.4,
+    "basis_km": 8.86,
+    "basis_date": "2026-05-28"
   },
   "speed_potential": {
     "comfortable_pace": "6:10",
@@ -61,9 +61,9 @@
     "fitness_message": "Consistent training \u2014 you're holding your current level.",
     "weak_spots": [
       "Too many hard-effort runs \u2014 aim for 80% easy pace",
-      "Cadence averages 159 spm \u2014 target 170\u2013180 spm"
+      "Cadence averages 161 spm \u2014 target 170\u2013180 spm"
     ],
-    "recent_runs": 5
+    "recent_runs": 4
   },
   "training_load": {
     "acute": 0,
@@ -76,7 +76,7 @@
   "recovery": {
     "hrv_last_night": null,
     "hrv_7day_avg": 62,
-    "hrv_baseline": 65,
+    "hrv_baseline": 65.0,
     "hrv_status": "normal",
     "body_battery": null,
     "resting_hr": null,

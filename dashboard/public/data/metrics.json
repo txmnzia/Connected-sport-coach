@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-02T06:00:00Z",
-  "data_through": "2026-07-02",
+  "generated_at": "2026-07-03T06:00:00Z",
+  "data_through": "2026-07-03",
   "injury_risk": {
-    "score": 53,
+    "score": 59,
     "label": "high",
     "message": "Consider an easy or rest day",
     "factors": {
       "training_load": {
         "label": "Training load",
         "status": "elevated",
-        "acwr": 1.78
+        "acwr": 2.81
       },
       "recovery": {
         "label": "Recovery (HRV)",
@@ -66,8 +66,8 @@
   },
   "training_load": {
     "acute": 290.8,
-    "chronic": 163.7,
-    "acwr": 1.78,
+    "chronic": 103.7,
+    "acwr": 2.81,
     "weekly_km": 7.4,
     "avg_4week_km": 2.4,
     "volume_spike_pct": 214.6
@@ -75,7 +75,7 @@
   "recovery": {
     "hrv_last_night": null,
     "hrv_7day_avg": 62,
-    "hrv_baseline": 63,
+    "hrv_baseline": 62.5,
     "hrv_status": "normal",
     "body_battery": null,
     "resting_hr": null,

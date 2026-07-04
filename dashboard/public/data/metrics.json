@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-03T06:00:00Z",
-  "data_through": "2026-07-03",
+  "generated_at": "2026-07-04T06:00:00Z",
+  "data_through": "2026-07-04",
   "injury_risk": {
     "score": 59,
     "label": "high",
@@ -60,9 +60,10 @@
     "fitness_label": "maintaining",
     "fitness_message": "Consistent training \u2014 you're holding your current level.",
     "weak_spots": [
-      "Cadence averages 163 spm \u2014 target 170\u2013180 spm"
+      "Too many hard-effort runs \u2014 aim for 80% easy pace",
+      "Cadence averages 164 spm \u2014 target 170\u2013180 spm"
     ],
-    "recent_runs": 3
+    "recent_runs": 2
   },
   "training_load": {
     "acute": 290.8,
@@ -75,7 +76,7 @@
   "recovery": {
     "hrv_last_night": null,
     "hrv_7day_avg": 62,
-    "hrv_baseline": 62.5,
+    "hrv_baseline": 62,
     "hrv_status": "normal",
     "body_battery": null,
     "resting_hr": null,

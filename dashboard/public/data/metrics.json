@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-06T06:00:00Z",
-  "data_through": "2026-07-06",
+  "generated_at": "2026-07-07T06:00:00Z",
+  "data_through": "2026-07-07",
   "injury_risk": {
-    "score": 50,
+    "score": 59,
     "label": "high",
     "message": "Consider an easy or rest day",
     "factors": {
       "training_load": {
         "label": "Training load",
         "status": "elevated",
-        "acwr": 2.81
+        "acwr": 3.41
       },
       "recovery": {
         "label": "Recovery (HRV)",
@@ -17,21 +17,21 @@
       },
       "volume": {
         "label": "Weekly volume",
-        "status": "ok",
-        "spike_pct": -100.0
+        "status": "high",
+        "spike_pct": 278.9
       },
       "resting_hr": {
         "label": "Resting heart rate",
-        "status": "elevated"
+        "status": "ok"
       }
     }
   },
   "max_safe_distance": {
-    "easy_km": 4.9,
-    "moderate_km": 3.9,
-    "hard_km": 2.9,
-    "basis_km": 7.4,
-    "basis_date": "2026-07-01"
+    "easy_km": 8.0,
+    "moderate_km": 6.4,
+    "hard_km": 4.8,
+    "basis_km": 10.24,
+    "basis_date": "2026-07-06"
   },
   "speed_potential": {
     "comfortable_pace": "6:14",
@@ -60,26 +60,25 @@
     "fitness_label": "maintaining",
     "fitness_message": "Consistent training \u2014 you're holding your current level.",
     "weak_spots": [
-      "Too many hard-effort runs \u2014 aim for 80% easy pace",
-      "Cadence averages 164 spm \u2014 target 170\u2013180 spm"
+      "Cadence averages 162 spm \u2014 target 170\u2013180 spm"
     ],
-    "recent_runs": 2
+    "recent_runs": 3
   },
   "training_load": {
-    "acute": 290.8,
-    "chronic": 103.7,
-    "acwr": 2.81,
-    "weekly_km": 0,
+    "acute": 719.3,
+    "chronic": 210.8,
+    "acwr": 3.41,
+    "weekly_km": 10.2,
     "avg_4week_km": 2.7,
-    "volume_spike_pct": -100.0
+    "volume_spike_pct": 278.9
   },
   "recovery": {
     "hrv_last_night": null,
     "hrv_7day_avg": 62,
-    "hrv_baseline": 62,
+    "hrv_baseline": 62.0,
     "hrv_status": "normal",
     "body_battery": null,
-    "resting_hr": 63.0,
-    "resting_hr_baseline": 53
+    "resting_hr": null,
+    "resting_hr_baseline": 52
   }
 }

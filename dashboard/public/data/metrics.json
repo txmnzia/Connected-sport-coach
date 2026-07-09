@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-08T06:00:00Z",
-  "data_through": "2026-07-08",
+  "generated_at": "2026-07-09T06:00:00Z",
+  "data_through": "2026-07-09",
   "injury_risk": {
-    "score": 55,
+    "score": 59,
     "label": "high",
     "message": "Consider an easy or rest day",
     "factors": {
       "training_load": {
         "label": "Training load",
         "status": "elevated",
-        "acwr": 2.03
+        "acwr": 2.94
       },
       "recovery": {
         "label": "Recovery (HRV)",
@@ -18,7 +18,7 @@
       "volume": {
         "label": "Weekly volume",
         "status": "high",
-        "spike_pct": 278.9
+        "spike_pct": 575.3
       },
       "resting_hr": {
         "label": "Resting heart rate",
@@ -41,18 +41,18 @@
     "best_pace": "4:13",
     "readiness_pct": 97,
     "hr_zones": {
-      "max_hr": 182.0,
+      "max_hr": 179.0,
       "z2": [
-        109,
-        127
+        107,
+        125
       ],
       "z3": [
-        127,
-        146
+        125,
+        143
       ],
       "z4": [
-        146,
-        164
+        143,
+        161
       ]
     }
   },
@@ -60,25 +60,26 @@
     "fitness_label": "maintaining",
     "fitness_message": "Consistent training \u2014 you're holding your current level.",
     "weak_spots": [
-      "Cadence averages 162 spm \u2014 target 170\u2013180 spm"
+      "Too many hard-effort runs \u2014 aim for 80% easy pace",
+      "Cadence averages 161 spm \u2014 target 170\u2013180 spm"
     ],
-    "recent_runs": 3
+    "recent_runs": 4
   },
   "training_load": {
-    "acute": 428.5,
-    "chronic": 210.8,
-    "acwr": 2.03,
-    "weekly_km": 10.2,
+    "acute": 805.5,
+    "chronic": 274.1,
+    "acwr": 2.94,
+    "weekly_km": 18.2,
     "avg_4week_km": 2.7,
-    "volume_spike_pct": 278.9
+    "volume_spike_pct": 575.3
   },
   "recovery": {
     "hrv_last_night": null,
     "hrv_7day_avg": 62,
-    "hrv_baseline": 62,
+    "hrv_baseline": 62.0,
     "hrv_status": "normal",
     "body_battery": null,
     "resting_hr": null,
-    "resting_hr_baseline": 53
+    "resting_hr_baseline": 52
   }
 }

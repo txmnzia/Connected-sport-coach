@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-11T06:00:00Z",
-  "data_through": "2026-07-11",
+  "generated_at": "2026-07-12T06:00:00Z",
+  "data_through": "2026-07-12",
   "injury_risk": {
     "score": 59,
     "label": "high",
@@ -75,10 +75,10 @@
   "recovery": {
     "hrv_last_night": null,
     "hrv_7day_avg": 62,
-    "hrv_baseline": 62.0,
+    "hrv_baseline": 62,
     "hrv_status": "normal",
     "body_battery": null,
     "resting_hr": null,
-    "resting_hr_baseline": 52
+    "resting_hr_baseline": 53
   }
 }

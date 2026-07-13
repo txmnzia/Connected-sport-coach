@@ -1,11 +1,6 @@
 {
-  "generated_at": "2026-07-12",
+  "generated_at": "2026-07-13",
   "weekly_volumes": [
-    {
-      "week_start": "2026-04-20",
-      "total_km": 19.0,
-      "runs": 2
-    },
     {
       "week_start": "2026-04-27",
       "total_km": 13.0,
@@ -58,25 +53,16 @@
     },
     {
       "week_start": "2026-07-06",
-      "total_km": 26.9,
-      "runs": 3
+      "total_km": 45.9,
+      "runs": 4
+    },
+    {
+      "week_start": "2026-07-13",
+      "total_km": 0,
+      "runs": 0
     }
   ],
   "activities": [
-    {
-      "date": "2026-04-13",
-      "activity_id": 22512584321,
-      "distance_km": 6.66,
-      "duration_min": 43.8,
-      "avg_pace_s": 394.3,
-      "avg_hr": 142.0,
-      "max_hr": 159.0,
-      "cadence": 149.375,
-      "elevation_gain_m": 48.0,
-      "training_load": 0,
-      "aerobic_effect": 3.0999999046325684,
-      "ground_contact_balance": 50.0
-    },
     {
       "date": "2026-04-25",
       "activity_id": 22651467290,
@@ -370,16 +356,23 @@
       "training_load": 0,
       "aerobic_effect": 3.700000047683716,
       "ground_contact_balance": 50.0
+    },
+    {
+      "date": "2026-07-12",
+      "activity_id": 23570084556,
+      "distance_km": 19.01,
+      "duration_min": 116.9,
+      "avg_pace_s": 368.9,
+      "avg_hr": 163.0,
+      "max_hr": 182.0,
+      "cadence": 158.4375,
+      "elevation_gain_m": 74.0,
+      "training_load": 0,
+      "aerobic_effect": 5.0,
+      "ground_contact_balance": 50.0
     }
   ],
   "daily_health": [
-    {
-      "date": "2026-05-13",
-      "hrv_7day_avg": 62,
-      "hrv_last_night": 63,
-      "resting_hr": 52,
-      "body_battery_high": 82
-    },
     {
       "date": "2026-05-14",
       "hrv_7day_avg": 62,
@@ -960,6 +953,16 @@
     },
     {
       "date": "2026-07-12",
+      "body_battery_high": null,
+      "body_battery_low": null,
+      "stress_avg": null,
+      "resting_hr": null,
+      "hrv_7day_avg": null,
+      "hrv_last_night": null,
+      "hrv_status": ""
+    },
+    {
+      "date": "2026-07-13",
       "body_battery_high": null,
       "body_battery_low": null,
       "stress_avg": null,

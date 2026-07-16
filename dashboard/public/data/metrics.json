@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-15T06:00:00Z",
-  "data_through": "2026-07-15",
+  "generated_at": "2026-07-16T06:00:00Z",
+  "data_through": "2026-07-16",
   "injury_risk": {
-    "score": 42,
+    "score": 44,
     "label": "moderate",
     "message": "Train, but ease off intensity",
     "factors": {
       "training_load": {
         "label": "Training load",
         "status": "elevated",
-        "acwr": 2.2
+        "acwr": 2.43
       },
       "recovery": {
         "label": "Recovery (HRV)",
@@ -18,7 +18,7 @@
       "volume": {
         "label": "Weekly volume",
         "status": "ok",
-        "spike_pct": -100.0
+        "spike_pct": -33.4
       },
       "resting_hr": {
         "label": "Resting heart rate",
@@ -60,25 +60,25 @@
     "fitness_label": "maintaining",
     "fitness_message": "Consistent training \u2014 you're holding your current level.",
     "weak_spots": [
-      "Cadence averages 157 spm \u2014 target 170\u2013180 spm"
+      "Cadence averages 158 spm \u2014 target 170\u2013180 spm"
     ],
-    "recent_runs": 5
+    "recent_runs": 6
   },
   "training_load": {
-    "acute": 1346.6,
-    "chronic": 610.7,
-    "acwr": 2.2,
-    "weekly_km": 0,
+    "acute": 1698.0,
+    "chronic": 698.6,
+    "acwr": 2.43,
+    "weekly_km": 8.9,
     "avg_4week_km": 13.3,
-    "volume_spike_pct": -100.0
+    "volume_spike_pct": -33.4
   },
   "recovery": {
     "hrv_last_night": null,
     "hrv_7day_avg": 62,
-    "hrv_baseline": 62.0,
+    "hrv_baseline": 62,
     "hrv_status": "normal",
     "body_battery": null,
     "resting_hr": null,
-    "resting_hr_baseline": 61
+    "resting_hr_baseline": 63
   }
 }

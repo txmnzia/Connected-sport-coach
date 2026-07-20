@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-19T06:00:00Z",
-  "data_through": "2026-07-19",
+  "generated_at": "2026-07-20T06:00:00Z",
+  "data_through": "2026-07-20",
   "injury_risk": {
-    "score": 14,
+    "score": 19,
     "label": "low",
     "message": "You're good to train hard today",
     "factors": {
@@ -18,18 +18,18 @@
       "volume": {
         "label": "Weekly volume",
         "status": "ok",
-        "spike_pct": -33.4
+        "spike_pct": -100.0
       },
       "resting_hr": {
         "label": "Resting heart rate",
-        "status": "ok"
+        "status": "elevated"
       }
     }
   },
   "max_safe_distance": {
-    "easy_km": 22.8,
-    "moderate_km": 18.2,
-    "hard_km": 13.7,
+    "easy_km": 19.4,
+    "moderate_km": 15.5,
+    "hard_km": 11.6,
     "basis_km": 19.01,
     "basis_date": "2026-07-12"
   },
@@ -68,9 +68,9 @@
     "acute": 351.4,
     "chronic": 698.6,
     "acwr": 0.5,
-    "weekly_km": 8.9,
-    "avg_4week_km": 13.3,
-    "volume_spike_pct": -33.4
+    "weekly_km": 0,
+    "avg_4week_km": 15.5,
+    "volume_spike_pct": -100.0
   },
   "recovery": {
     "hrv_last_night": null,
@@ -78,7 +78,7 @@
     "hrv_baseline": null,
     "hrv_status": "unknown",
     "body_battery": null,
-    "resting_hr": null,
-    "resting_hr_baseline": 64
+    "resting_hr": 73.0,
+    "resting_hr_baseline": 66
   }
 }

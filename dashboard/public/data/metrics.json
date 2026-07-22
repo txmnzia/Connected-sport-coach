@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-21T06:00:00Z",
-  "data_through": "2026-07-21",
+  "generated_at": "2026-07-22T06:00:00Z",
+  "data_through": "2026-07-22",
   "injury_risk": {
-    "score": 18,
+    "score": 14,
     "label": "low",
     "message": "You're good to train hard today",
     "factors": {
       "training_load": {
         "label": "Training load",
-        "status": "ok",
-        "acwr": 1.08
+        "status": "low",
+        "acwr": 0.66
       },
       "recovery": {
         "label": "Recovery (HRV)",
@@ -65,9 +65,9 @@
     "recent_runs": 7
   },
   "training_load": {
-    "acute": 900.1,
+    "acute": 548.7,
     "chronic": 835.7,
-    "acwr": 1.08,
+    "acwr": 0.66,
     "weekly_km": 14.1,
     "avg_4week_km": 15.5,
     "volume_spike_pct": -9.6

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-02T06:00:00Z",
-  "data_through": "2026-08-02",
+  "generated_at": "2026-08-03T06:00:00Z",
+  "data_through": "2026-08-03",
   "injury_risk": {
     "score": 14,
     "label": "low",
@@ -66,10 +66,10 @@
   },
   "training_load": {
     "acute": 0,
-    "chronic": 763.0,
+    "chronic": 655.9,
     "acwr": 0.0,
     "weekly_km": 0,
-    "avg_4week_km": 19.0,
+    "avg_4week_km": 17.2,
     "volume_spike_pct": -100.0
   },
   "recovery": {

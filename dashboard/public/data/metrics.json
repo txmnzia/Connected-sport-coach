@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-07T06:00:00Z",
-  "data_through": "2026-08-07",
+  "generated_at": "2026-08-08T06:00:00Z",
+  "data_through": "2026-08-08",
   "injury_risk": {
     "score": 14,
     "label": "low",
@@ -34,9 +34,9 @@
     "basis_date": "2026-07-12"
   },
   "speed_potential": {
-    "comfortable_pace": "6:09",
+    "comfortable_pace": "6:02",
     "max_pace": "4:13",
-    "comfortable_pace_s": 369,
+    "comfortable_pace_s": 362,
     "max_pace_s": 253,
     "best_pace": "4:13",
     "readiness_pct": 100,
@@ -60,9 +60,9 @@
     "fitness_label": "maintaining",
     "fitness_message": "Consistent training \u2014 you're holding your current level.",
     "weak_spots": [
-      "Cadence averages 158 spm \u2014 target 170\u2013180 spm"
+      "Cadence averages 159 spm \u2014 target 170\u2013180 spm"
     ],
-    "recent_runs": 4
+    "recent_runs": 3
   },
   "training_load": {
     "acute": 0,

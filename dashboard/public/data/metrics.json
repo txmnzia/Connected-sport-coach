@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-09T06:00:00Z",
-  "data_through": "2026-08-09",
+  "generated_at": "2026-08-10T06:00:00Z",
+  "data_through": "2026-08-10",
   "injury_risk": {
     "score": 14,
     "label": "low",
@@ -27,11 +27,11 @@
     }
   },
   "max_safe_distance": {
-    "easy_km": 22.8,
-    "moderate_km": 18.2,
-    "hard_km": 13.7,
-    "basis_km": 19.01,
-    "basis_date": "2026-07-12"
+    "easy_km": 16.9,
+    "moderate_km": 13.5,
+    "hard_km": 10.1,
+    "basis_km": 14.05,
+    "basis_date": "2026-07-20"
   },
   "speed_potential": {
     "comfortable_pace": "6:02",
@@ -62,14 +62,14 @@
     "weak_spots": [
       "Cadence averages 159 spm \u2014 target 170\u2013180 spm"
     ],
-    "recent_runs": 3
+    "recent_runs": 2
   },
   "training_load": {
     "acute": 0,
     "chronic": 225.0,
     "acwr": 0.0,
     "weekly_km": 0,
-    "avg_4week_km": 17.2,
+    "avg_4week_km": 5.7,
     "volume_spike_pct": -100.0
   },
   "recovery": {

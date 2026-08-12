@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-11T06:00:00Z",
-  "data_through": "2026-08-11",
+  "generated_at": "2026-08-12T06:00:00Z",
+  "data_through": "2026-08-12",
   "injury_risk": {
     "score": 14,
     "label": "low",
@@ -34,9 +34,9 @@
     "basis_date": "2026-07-20"
   },
   "speed_potential": {
-    "comfortable_pace": "6:02",
+    "comfortable_pace": "6:09",
     "max_pace": "4:13",
-    "comfortable_pace_s": 362,
+    "comfortable_pace_s": 369,
     "max_pace_s": 253,
     "best_pace": "4:13",
     "readiness_pct": 100,
@@ -66,7 +66,7 @@
   },
   "training_load": {
     "acute": 0,
-    "chronic": 225.0,
+    "chronic": 137.2,
     "acwr": 0.0,
     "weekly_km": 0,
     "avg_4week_km": 5.7,

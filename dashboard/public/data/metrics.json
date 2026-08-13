@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-12T06:00:00Z",
-  "data_through": "2026-08-12",
+  "generated_at": "2026-08-13T06:00:00Z",
+  "data_through": "2026-08-13",
   "injury_risk": {
     "score": 14,
     "label": "low",
@@ -60,9 +60,9 @@
     "fitness_label": "maintaining",
     "fitness_message": "Consistent training \u2014 you're holding your current level.",
     "weak_spots": [
-      "Cadence averages 159 spm \u2014 target 170\u2013180 spm"
+      "Cadence averages 157 spm \u2014 target 170\u2013180 spm"
     ],
-    "recent_runs": 2
+    "recent_runs": 1
   },
   "training_load": {
     "acute": 0,

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-17T06:00:00Z",
-  "data_through": "2026-08-17",
+  "generated_at": "2026-08-18T06:00:00Z",
+  "data_through": "2026-08-18",
   "injury_risk": {
     "score": 10,
     "label": "low",
@@ -27,11 +27,11 @@
     }
   },
   "max_safe_distance": {
-    "easy_km": 16.9,
-    "moderate_km": 13.5,
-    "hard_km": 10.1,
-    "basis_km": 14.05,
-    "basis_date": "2026-07-20"
+    "easy_km": 10.0,
+    "moderate_km": 8.0,
+    "hard_km": 6.0,
+    "basis_km": null,
+    "basis_date": null
   },
   "speed_potential": {
     "comfortable_pace": "6:28",
@@ -59,10 +59,8 @@
   "performance": {
     "fitness_label": "maintaining",
     "fitness_message": "Consistent training \u2014 you're holding your current level.",
-    "weak_spots": [
-      "Cadence averages 157 spm \u2014 target 170\u2013180 spm"
-    ],
-    "recent_runs": 1
+    "weak_spots": [],
+    "recent_runs": 0
   },
   "training_load": {
     "acute": 0,

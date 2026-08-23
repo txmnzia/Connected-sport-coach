@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-22T06:00:00Z",
-  "data_through": "2026-08-22",
+  "generated_at": "2026-08-23T06:00:00Z",
+  "data_through": "2026-08-23",
   "injury_risk": {
-    "score": 10,
+    "score": 9,
     "label": "low",
     "message": "You're good to train hard today",
     "factors": {
@@ -76,7 +76,7 @@
     "hrv_baseline": null,
     "hrv_status": "unknown",
     "body_battery": null,
-    "resting_hr": null,
-    "resting_hr_baseline": 68
+    "resting_hr": 73.0,
+    "resting_hr_baseline": 73
   }
 }

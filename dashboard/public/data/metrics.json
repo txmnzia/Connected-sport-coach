@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-28T06:00:00Z",
-  "data_through": "2026-08-28",
+  "generated_at": "2026-08-29T06:00:00Z",
+  "data_through": "2026-08-29",
   "injury_risk": {
     "score": 9,
     "label": "low",
@@ -76,7 +76,7 @@
     "hrv_baseline": null,
     "hrv_status": "unknown",
     "body_battery": null,
-    "resting_hr": 55.0,
-    "resting_hr_baseline": 63
+    "resting_hr": 59.0,
+    "resting_hr_baseline": 61
   }
 }

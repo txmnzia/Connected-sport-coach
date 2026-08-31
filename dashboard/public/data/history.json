@@ -1,11 +1,6 @@
 {
-  "generated_at": "2026-08-30",
+  "generated_at": "2026-08-31",
   "weekly_volumes": [
-    {
-      "week_start": "2026-06-08",
-      "total_km": 3.4,
-      "runs": 1
-    },
     {
       "week_start": "2026-06-15",
       "total_km": 0,
@@ -58,6 +53,11 @@
     },
     {
       "week_start": "2026-08-24",
+      "total_km": 0,
+      "runs": 0
+    },
+    {
+      "week_start": "2026-08-31",
       "total_km": 0,
       "runs": 0
     }
@@ -191,16 +191,6 @@
     }
   ],
   "daily_health": [
-    {
-      "date": "2026-07-01",
-      "body_battery_high": null,
-      "body_battery_low": null,
-      "stress_avg": null,
-      "resting_hr": null,
-      "hrv_7day_avg": null,
-      "hrv_last_night": null,
-      "hrv_status": ""
-    },
     {
       "date": "2026-07-02",
       "body_battery_high": null,
@@ -793,6 +783,16 @@
     },
     {
       "date": "2026-08-30",
+      "body_battery_high": null,
+      "body_battery_low": null,
+      "stress_avg": null,
+      "resting_hr": null,
+      "hrv_7day_avg": null,
+      "hrv_last_night": null,
+      "hrv_status": ""
+    },
+    {
+      "date": "2026-08-31",
       "body_battery_high": null,
       "body_battery_low": null,
       "stress_avg": null,

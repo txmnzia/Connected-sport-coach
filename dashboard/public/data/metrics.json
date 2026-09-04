@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-03T06:00:00Z",
-  "data_through": "2026-09-03",
+  "generated_at": "2026-09-04T06:00:00Z",
+  "data_through": "2026-09-04",
   "injury_risk": {
     "score": 10,
     "label": "low",
@@ -34,9 +34,9 @@
     "basis_date": null
   },
   "speed_potential": {
-    "comfortable_pace": "6:10",
+    "comfortable_pace": "6:57",
     "max_pace": "5:42",
-    "comfortable_pace_s": 370,
+    "comfortable_pace_s": 417,
     "max_pace_s": 342,
     "best_pace": "5:42",
     "readiness_pct": 100,

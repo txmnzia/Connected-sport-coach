@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-09T06:00:00Z",
-  "data_through": "2026-09-09",
+  "generated_at": "2026-09-10T06:00:00Z",
+  "data_through": "2026-09-10",
   "injury_risk": {
     "score": 10,
     "label": "low",
@@ -41,18 +41,18 @@
     "best_pace": "5:42",
     "readiness_pct": 100,
     "hr_zones": {
-      "max_hr": 182.0,
+      "max_hr": 178.0,
       "z2": [
-        109,
-        127
+        107,
+        125
       ],
       "z3": [
-        127,
-        146
+        125,
+        142
       ],
       "z4": [
-        146,
-        164
+        142,
+        160
       ]
     }
   },

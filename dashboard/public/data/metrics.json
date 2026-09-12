@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-11T06:00:00Z",
-  "data_through": "2026-09-11",
+  "generated_at": "2026-09-12T06:00:00Z",
+  "data_through": "2026-09-12",
   "injury_risk": {
-    "score": 10,
-    "label": "low",
-    "message": "You're good to train hard today",
+    "score": 51,
+    "label": "high",
+    "message": "Consider an easy or rest day",
     "factors": {
       "training_load": {
         "label": "Training load",
-        "status": "ok",
-        "acwr": 1.0
+        "status": "elevated",
+        "acwr": 4.0
       },
       "recovery": {
         "label": "Recovery (HRV)",
@@ -22,24 +22,24 @@
       },
       "resting_hr": {
         "label": "Resting heart rate",
-        "status": "ok"
+        "status": "elevated"
       }
     }
   },
   "max_safe_distance": {
-    "easy_km": 10.0,
-    "moderate_km": 8.0,
-    "hard_km": 6.0,
-    "basis_km": null,
-    "basis_date": null
+    "easy_km": 4.3,
+    "moderate_km": 3.5,
+    "hard_km": 2.6,
+    "basis_km": 6.51,
+    "basis_date": "2026-09-12"
   },
   "speed_potential": {
     "comfortable_pace": "6:57",
-    "max_pace": "5:42",
+    "max_pace": "6:03",
     "comfortable_pace_s": 417,
-    "max_pace_s": 342,
+    "max_pace_s": 363,
     "best_pace": "5:42",
-    "readiness_pct": 100,
+    "readiness_pct": 97,
     "hr_zones": {
       "max_hr": 178.0,
       "z2": [
@@ -59,14 +59,16 @@
   "performance": {
     "fitness_label": "maintaining",
     "fitness_message": "Consistent training \u2014 you're holding your current level.",
-    "weak_spots": [],
-    "recent_runs": 0
+    "weak_spots": [
+      "Cadence averages 151 spm \u2014 target 170\u2013180 spm"
+    ],
+    "recent_runs": 1
   },
   "training_load": {
-    "acute": 0,
-    "chronic": 0.0,
-    "acwr": 1.0,
-    "weekly_km": 0,
+    "acute": 284.4,
+    "chronic": 71.1,
+    "acwr": 4.0,
+    "weekly_km": 6.5,
     "avg_4week_km": 0,
     "volume_spike_pct": 0.0
   },
@@ -76,7 +78,7 @@
     "hrv_baseline": null,
     "hrv_status": "unknown",
     "body_battery": null,
-    "resting_hr": null,
-    "resting_hr_baseline": 59
+    "resting_hr": 85.0,
+    "resting_hr_baseline": 66
   }
 }

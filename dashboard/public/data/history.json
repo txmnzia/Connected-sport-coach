@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12",
+  "generated_at": "2026-09-13",
   "weekly_volumes": [
     {
       "week_start": "2026-06-22",
@@ -58,8 +58,8 @@
     },
     {
       "week_start": "2026-09-07",
-      "total_km": 6.5,
-      "runs": 1
+      "total_km": 13.9,
+      "runs": 2
     }
   ],
   "activities": [
@@ -174,19 +174,23 @@
       "training_load": 0,
       "aerobic_effect": 3.299999952316284,
       "ground_contact_balance": 50.0
+    },
+    {
+      "date": "2026-09-13",
+      "activity_id": 24341098653,
+      "distance_km": 7.38,
+      "duration_min": 45.8,
+      "avg_pace_s": 372.7,
+      "avg_hr": 152.0,
+      "max_hr": 161.0,
+      "cadence": 167.625,
+      "elevation_gain_m": 29.0,
+      "training_load": 0,
+      "aerobic_effect": 3.5,
+      "ground_contact_balance": 50.0
     }
   ],
   "daily_health": [
-    {
-      "date": "2026-07-14",
-      "body_battery_high": null,
-      "body_battery_low": null,
-      "stress_avg": null,
-      "resting_hr": null,
-      "hrv_7day_avg": null,
-      "hrv_last_night": null,
-      "hrv_status": ""
-    },
     {
       "date": "2026-07-15",
       "body_battery_high": null,
@@ -783,6 +787,16 @@
       "body_battery_low": null,
       "stress_avg": 82,
       "resting_hr": 85.0,
+      "hrv_7day_avg": null,
+      "hrv_last_night": null,
+      "hrv_status": ""
+    },
+    {
+      "date": "2026-09-13",
+      "body_battery_high": null,
+      "body_battery_low": null,
+      "stress_avg": 40,
+      "resting_hr": 61.0,
       "hrv_7day_avg": null,
       "hrv_last_night": null,
       "hrv_status": ""

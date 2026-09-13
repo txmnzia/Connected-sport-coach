@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-12T06:00:00Z",
-  "data_through": "2026-09-12",
+  "generated_at": "2026-09-13T06:00:00Z",
+  "data_through": "2026-09-13",
   "injury_risk": {
-    "score": 51,
-    "label": "high",
-    "message": "Consider an easy or rest day",
+    "score": 45,
+    "label": "moderate",
+    "message": "Train, but ease off intensity",
     "factors": {
       "training_load": {
         "label": "Training load",
@@ -22,16 +22,16 @@
       },
       "resting_hr": {
         "label": "Resting heart rate",
-        "status": "elevated"
+        "status": "ok"
       }
     }
   },
   "max_safe_distance": {
-    "easy_km": 4.3,
-    "moderate_km": 3.5,
-    "hard_km": 2.6,
-    "basis_km": 6.51,
-    "basis_date": "2026-09-12"
+    "easy_km": 5.8,
+    "moderate_km": 4.6,
+    "hard_km": 3.5,
+    "basis_km": 7.38,
+    "basis_date": "2026-09-13"
   },
   "speed_potential": {
     "comfortable_pace": "6:57",
@@ -60,15 +60,15 @@
     "fitness_label": "maintaining",
     "fitness_message": "Consistent training \u2014 you're holding your current level.",
     "weak_spots": [
-      "Cadence averages 151 spm \u2014 target 170\u2013180 spm"
+      "Cadence averages 159 spm \u2014 target 170\u2013180 spm"
     ],
-    "recent_runs": 1
+    "recent_runs": 2
   },
   "training_load": {
-    "acute": 284.4,
-    "chronic": 71.1,
+    "acute": 611.0,
+    "chronic": 152.7,
     "acwr": 4.0,
-    "weekly_km": 6.5,
+    "weekly_km": 13.9,
     "avg_4week_km": 0,
     "volume_spike_pct": 0.0
   },
@@ -78,7 +78,7 @@
     "hrv_baseline": null,
     "hrv_status": "unknown",
     "body_battery": null,
-    "resting_hr": 85.0,
-    "resting_hr_baseline": 66
+    "resting_hr": 61.0,
+    "resting_hr_baseline": 61
   }
 }

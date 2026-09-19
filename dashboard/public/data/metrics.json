@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-18T06:00:00Z",
-  "data_through": "2026-09-18",
+  "generated_at": "2026-09-19T06:00:00Z",
+  "data_through": "2026-09-19",
   "injury_risk": {
-    "score": 46,
+    "score": 43,
     "label": "moderate",
     "message": "Train, but ease off intensity",
     "factors": {
       "training_load": {
         "label": "Training load",
         "status": "elevated",
-        "acwr": 4.0
+        "acwr": 2.14
       },
       "recovery": {
         "label": "Recovery (HRV)",
@@ -65,9 +65,9 @@
     "recent_runs": 2
   },
   "training_load": {
-    "acute": 611.0,
+    "acute": 326.6,
     "chronic": 152.7,
-    "acwr": 4.0,
+    "acwr": 2.14,
     "weekly_km": 0,
     "avg_4week_km": 3.5,
     "volume_spike_pct": -100.0
@@ -79,6 +79,6 @@
     "hrv_status": "unknown",
     "body_battery": null,
     "resting_hr": null,
-    "resting_hr_baseline": 61
+    "resting_hr_baseline": 60
   }
 }

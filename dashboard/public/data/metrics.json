@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-19T06:00:00Z",
-  "data_through": "2026-09-19",
+  "generated_at": "2026-09-20T06:00:00Z",
+  "data_through": "2026-09-20",
   "injury_risk": {
-    "score": 43,
-    "label": "moderate",
-    "message": "Train, but ease off intensity",
+    "score": 14,
+    "label": "low",
+    "message": "You're good to train hard today",
     "factors": {
       "training_load": {
         "label": "Training load",
-        "status": "elevated",
-        "acwr": 2.14
+        "status": "low",
+        "acwr": 0.0
       },
       "recovery": {
         "label": "Recovery (HRV)",
@@ -27,19 +27,19 @@
     }
   },
   "max_safe_distance": {
-    "easy_km": 5.8,
-    "moderate_km": 4.6,
-    "hard_km": 3.5,
+    "easy_km": 8.9,
+    "moderate_km": 7.1,
+    "hard_km": 5.3,
     "basis_km": 7.38,
     "basis_date": "2026-09-13"
   },
   "speed_potential": {
     "comfortable_pace": "6:57",
-    "max_pace": "6:03",
+    "max_pace": "5:42",
     "comfortable_pace_s": 417,
-    "max_pace_s": 363,
+    "max_pace_s": 342,
     "best_pace": "5:42",
-    "readiness_pct": 97,
+    "readiness_pct": 100,
     "hr_zones": {
       "max_hr": 178.0,
       "z2": [
@@ -65,9 +65,9 @@
     "recent_runs": 2
   },
   "training_load": {
-    "acute": 326.6,
+    "acute": 0,
     "chronic": 152.7,
-    "acwr": 2.14,
+    "acwr": 0.0,
     "weekly_km": 0,
     "avg_4week_km": 3.5,
     "volume_spike_pct": -100.0

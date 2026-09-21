@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-20T06:00:00Z",
-  "data_through": "2026-09-20",
+  "generated_at": "2026-09-21T06:00:00Z",
+  "data_through": "2026-09-21",
   "injury_risk": {
-    "score": 14,
-    "label": "low",
-    "message": "You're good to train hard today",
+    "score": 47,
+    "label": "moderate",
+    "message": "Train, but ease off intensity",
     "factors": {
       "training_load": {
         "label": "Training load",
-        "status": "low",
-        "acwr": 0.0
+        "status": "elevated",
+        "acwr": 1.36
       },
       "recovery": {
         "label": "Recovery (HRV)",
@@ -17,29 +17,29 @@
       },
       "volume": {
         "label": "Weekly volume",
-        "status": "ok",
-        "spike_pct": -100.0
+        "status": "high",
+        "spike_pct": 102.2
       },
       "resting_hr": {
         "label": "Resting heart rate",
-        "status": "ok"
+        "status": "elevated"
       }
     }
   },
   "max_safe_distance": {
-    "easy_km": 8.9,
-    "moderate_km": 7.1,
-    "hard_km": 5.3,
+    "easy_km": 6.0,
+    "moderate_km": 4.8,
+    "hard_km": 3.6,
     "basis_km": 7.38,
     "basis_date": "2026-09-13"
   },
   "speed_potential": {
     "comfortable_pace": "6:57",
-    "max_pace": "5:42",
+    "max_pace": "6:03",
     "comfortable_pace_s": 417,
-    "max_pace_s": 342,
+    "max_pace_s": 363,
     "best_pace": "5:42",
-    "readiness_pct": 100,
+    "readiness_pct": 97,
     "hr_zones": {
       "max_hr": 178.0,
       "z2": [
@@ -60,17 +60,17 @@
     "fitness_label": "maintaining",
     "fitness_message": "Consistent training \u2014 you're holding your current level.",
     "weak_spots": [
-      "Cadence averages 159 spm \u2014 target 170\u2013180 spm"
+      "Cadence averages 165 spm \u2014 target 170\u2013180 spm"
     ],
-    "recent_runs": 2
+    "recent_runs": 3
   },
   "training_load": {
-    "acute": 0,
-    "chronic": 152.7,
-    "acwr": 0.0,
-    "weekly_km": 0,
+    "acute": 314.4,
+    "chronic": 231.3,
+    "acwr": 1.36,
+    "weekly_km": 7.0,
     "avg_4week_km": 3.5,
-    "volume_spike_pct": -100.0
+    "volume_spike_pct": 102.2
   },
   "recovery": {
     "hrv_last_night": null,
@@ -78,7 +78,7 @@
     "hrv_baseline": null,
     "hrv_status": "unknown",
     "body_battery": null,
-    "resting_hr": null,
-    "resting_hr_baseline": 60
+    "resting_hr": 86.0,
+    "resting_hr_baseline": 61
   }
 }

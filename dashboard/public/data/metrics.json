@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-26T06:00:00Z",
-  "data_through": "2026-09-26",
+  "generated_at": "2026-09-27T06:00:00Z",
+  "data_through": "2026-09-27",
   "injury_risk": {
-    "score": 56,
+    "score": 61,
     "label": "high",
     "message": "Consider an easy or rest day",
     "factors": {
@@ -22,14 +22,14 @@
       },
       "resting_hr": {
         "label": "Resting heart rate",
-        "status": "ok"
+        "status": "elevated"
       }
     }
   },
   "max_safe_distance": {
-    "easy_km": 6.2,
-    "moderate_km": 5.0,
-    "hard_km": 3.7,
+    "easy_km": 5.3,
+    "moderate_km": 4.2,
+    "hard_km": 3.2,
     "basis_km": 8.0,
     "basis_date": "2026-09-23"
   },
@@ -78,7 +78,7 @@
     "hrv_baseline": null,
     "hrv_status": "unknown",
     "body_battery": null,
-    "resting_hr": null,
-    "resting_hr_baseline": 61
+    "resting_hr": 76.0,
+    "resting_hr_baseline": 67
   }
 }

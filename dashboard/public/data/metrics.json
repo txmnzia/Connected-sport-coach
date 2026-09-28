@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-27T06:00:00Z",
-  "data_through": "2026-09-27",
+  "generated_at": "2026-09-28T06:00:00Z",
+  "data_through": "2026-09-28",
   "injury_risk": {
-    "score": 61,
-    "label": "high",
-    "message": "Consider an easy or rest day",
+    "score": 17,
+    "label": "low",
+    "message": "You're good to train hard today",
     "factors": {
       "training_load": {
         "label": "Training load",
-        "status": "elevated",
-        "acwr": 2.06
+        "status": "ok",
+        "acwr": 1.06
       },
       "recovery": {
         "label": "Recovery (HRV)",
@@ -17,29 +17,29 @@
       },
       "volume": {
         "label": "Weekly volume",
-        "status": "high",
-        "spike_pct": 332.5
+        "status": "ok",
+        "spike_pct": -100.0
       },
       "resting_hr": {
         "label": "Resting heart rate",
-        "status": "elevated"
+        "status": "ok"
       }
     }
   },
   "max_safe_distance": {
-    "easy_km": 5.3,
-    "moderate_km": 4.2,
-    "hard_km": 3.2,
+    "easy_km": 9.6,
+    "moderate_km": 7.7,
+    "hard_km": 5.8,
     "basis_km": 8.0,
     "basis_date": "2026-09-23"
   },
   "speed_potential": {
     "comfortable_pace": "6:57",
-    "max_pace": "6:03",
+    "max_pace": "5:42",
     "comfortable_pace_s": 417,
-    "max_pace_s": 363,
+    "max_pace_s": 342,
     "best_pace": "5:42",
-    "readiness_pct": 97,
+    "readiness_pct": 100,
     "hr_zones": {
       "max_hr": 178.0,
       "z2": [
@@ -65,12 +65,12 @@
     "recent_runs": 4
   },
   "training_load": {
-    "acute": 649.9,
+    "acute": 335.5,
     "chronic": 315.2,
-    "acwr": 2.06,
-    "weekly_km": 15.0,
-    "avg_4week_km": 3.5,
-    "volume_spike_pct": 332.5
+    "acwr": 1.06,
+    "weekly_km": 0,
+    "avg_4week_km": 7.2,
+    "volume_spike_pct": -100.0
   },
   "recovery": {
     "hrv_last_night": null,
@@ -78,7 +78,7 @@
     "hrv_baseline": null,
     "hrv_status": "unknown",
     "body_battery": null,
-    "resting_hr": 76.0,
-    "resting_hr_baseline": 67
+    "resting_hr": 72.0,
+    "resting_hr_baseline": 72
   }
 }
